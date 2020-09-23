@@ -1,0 +1,47 @@
+<ion-header [hidden]='inputFocus1 || inputFocus2 || inputFocus3 ' class="header">
+  <div class="center">
+    <img src="/assets/images/LOGOSFBLEU.png" class="img"/>
+  </div>
+</ion-header>
+<ion-header *ngIf='inputFocus1 || inputFocus2 || inputFocus3' class="header">
+  <div  class="divShadow">
+    <img src="/assets/images/iconGoBack.png" class="iconGoBack" (click)='goBack()'/>
+    <p class="textVerif">{{ 'verify_infos_page_title' | translate }}</p>
+  </div>
+</ion-header>
+<ion-content fullscreen scroll-y="false">
+  <ion-avatar class="img1">
+<img [hidden]='inputFocus1 || inputFocus2 || inputFocus3 '
+    [src]="picture" />
+  </ion-avatar>
+  
+  <div class="container1" *ngIf="!clickedButton">
+    <p [hidden]='inputFocus1 || inputFocus2 || inputFocus3 ' class="text">{{ 'verify_infos_page_title' | translate }}</p>
+    <form [formGroup]="info">
+    <p  class="textInput1">{{ 'verify_infos_page_firstname_label' | translate }}</p>
+    <ion-input #Field1 formControlName="first_name" (focusin)='onFocus()' [(ngModel)]="first_name"
+    (focusout)="onBlur()" [class.focusedInput]='inputFocus1'  (keyup.enter)="gotoNextField(Field2)" autocapitalize="words" class="input"></ion-input>
+
+    <p class="textInput2">{{ 'verify_infos_page_lastname_label' | translate }}</p>
+    <ion-input formControlName="last_name" (focusin)='onFocus2()' [(ngModel)]="last_name"
+    (focusout)="onBlur2()" [class.focusedInput]='inputFocus2' #Field2 (keyup.enter)="gotoNextField(Field3)" autocapitalize="words" class="input"></ion-input>
+
+    <p class="textInput3">{{ 'verify_infos_page_email_label' | translate }}</p>
+    <ion-input #Field3 autocapitalize="words" (focusin)='onFocus3()' [(ngModel)]="emailLinkedin"
+    (focusout)="onBlur3()" [class.focusedInput]='inputFocus3' class="input" formControlName="email" ></ion-input>
+    <p class="error ion-padding" *ngIf=" error">
+      {{ 'verify_infos_page_error_mail_format' | translate }}
+    </p>
+
+   
+  
+    <div [hidden]='inputFocus1 || inputFocus2 || inputFocus3' class="center">
+      <button class="buttonContinue"  (click)="goVerifPassword()">
+        <p class="textButtonContinue">{{ 'continue_button' | translate }}</p>
+      </button>
+    </div>
+    </form>
+  </div>
+
+  
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-content class='my-custom-class' scroll-y="false">
+  <ion-grid>
+    <ion-row>
+      <img src='/assets/images/X.png' class="x" (click)='closeModal()'/>
+    </ion-row>
+    <ion-row>
+      <img src='/assets/img/arnaud.png' class="img1Notif"/>
+      <img src='/assets/images/user2.png' class="img2Notif"/>
+      <ion-col>
+        <p class="text1Notif" [innerHTML]="'popup_notification_component_text' | translate"></p>
+        <ion-row>
+          <img src='/assets/images/logoNotif.png' class="logoNotif" (click)='closeModal()'/>
+          <p class="text2Notif">Léa & Arnaud</p>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

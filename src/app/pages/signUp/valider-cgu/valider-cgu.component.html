@@ -1,0 +1,24 @@
+<ion-header>
+  <div class="center">
+    <img src='/assets/images/logo.png' class="img"/>
+  </div>
+</ion-header>
+<ion-content class="mover" [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+  <div class="content">
+    <h1>{{ 'valider_cgu_title' | translate }}</h1>
+    <br>
+    <p class="textContent" [innerHTML]="'valider_cgu_content' | translate"></p>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="empty-div">
+  </div>
+  <p class="text-footer" [class.textActivated]="cgUReaded" [innerHTML]="'valider_cgu_accept_button' | translate"></p>
+  <!--
+   [disabled]="!cgUReaded"
+   -->
+  <button  [class.btnActivated]="cgUReaded" (click)="signUp()">
+    <p class='textButton'>{{ 'signup_button' | translate }}</p>
+  </button>
+  <p   class="textConnect" (click)='goLoginScreen()'>{{ 'connect_button' | translate }}</p>
+</ion-footer>

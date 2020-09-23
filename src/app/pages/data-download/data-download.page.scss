@@ -1,0 +1,149 @@
+.header {
+    height: 94px;
+    background-color: #F9F9F9;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+.rowHeader {
+    margin-top: 16px;
+}
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 18px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -21px;
+}
+.ios .iconGoBack {
+    height: 18px;
+    width: 8px;
+    margin-top: 25px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+.ios .title {
+    font-size: 16px;
+    margin-top: 25px;
+}
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+.text {
+    width: 330px;
+    height: 63px;
+
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 16px;
+
+    color: #39639D;
+    margin-left: 28px;
+}
+.text2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #39639D;
+    margin-left: 29px;
+    margin-top: 30px;
+}
+.card {
+    width: 100%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 1px;
+    margin-left: 0px;
+}
+.text3 {
+    width: 292px;
+    height: 17px;
+
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin-left: 27px;
+}
+.button {
+    position: absolute;
+    width: 289px;
+    height: 36px;
+    left: calc(50% - 289px/2);
+    bottom: 30px;
+    border-radius: 30px;
+    background: linear-gradient(91.01deg, #39639D 0%, #2789AE 100.24%);
+}
+.textButton {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+@media (min-device-height: 700px) {
+    .button {
+        bottom: 67px;
+    }
+}
+@media (max-device-height: 667px) {
+    .button {
+        bottom: 40px;
+    }
+}
+
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 18px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .button {
+        bottom: 20px;
+    }
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+    }
+    .button {
+        bottom: 67px;
+    }
+    .ios .button {
+        bottom: 110px;
+    }
+}

@@ -1,0 +1,127 @@
+<ion-content class="background" scroll-y="false">
+  <ion-grid>
+    <ion-row class="rowHeader">
+      <img
+        src="/assets/img/iconGoBackWhite.png"
+        class="iconGoBack"
+        (click)="goBack()"
+      />
+
+      <p *ngIf='!state' class="title">{{ "new_search_page_title" | translate }}</p>
+      <p *ngIf='state' class="title">Critères</p>
+    </ion-row>
+  </ion-grid>
+  <p class="text1">{{ "new_search_page_criterias_label" | translate }}</p>
+  <ion-grid>
+    <!--
+    <ion-row (click)="goPageNewSearchMetier()">
+      <ion-col>
+        <ion-row>
+          <img src="/assets/img/iconMetier.png" class="iconMetier" />
+          <ion-col>
+            <p class="textMetier" [class.textMetier2]='valueParamMetier !== null'>
+              {{ "new_search_page_jobs_criteria_label" | translate }}
+            </p>
+            <p class="textInputMetier">{{ valueParamMetier }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <img src="/assets/img/supWhite.png" class="supWhite" />
+    </ion-row>
+    <div class="horizontalLine"></div>
+    -->
+    <ion-row (click)="goPageNewSearchSecteur()">
+      <ion-col>
+        <ion-row>
+          <img src="/assets/img/iconSecteur.png" class="iconMetier" />
+          <ion-col>
+            <p class="textMetier" [class.textMetier2]='valueParamSecteur !== null'>
+              {{ "new_search_page_sectors_criteria_label" | translate }}
+            </p>
+            <p class="textInputMetier">{{ valueParamSecteur }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <img src="/assets/img/supWhite.png" class="supWhite" />
+    </ion-row>
+    <div class="horizontalLine"></div>
+    <ion-row (click)="goPageNewSearchZoneGeo()">
+      <ion-col>
+        <ion-row>
+          <img src="/assets/img/iconZoneGeo.png" class="iconMetier" />
+          <ion-col>
+            <p class="textMetier" [class.textMetier2]='valueParamZoneGeo!== null'>
+              {{
+                "new_search_page_geographical_zone_criteria_label" | translate
+              }}
+              <!-- <span *ngIf="valueParamZoneGeo !== null">(1)</span> -->
+            </p>
+            <p class="textInputMetier">{{ valueParamZoneGeo }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <img src="/assets/img/supWhite.png" class="supWhite" />
+    </ion-row>
+    <div class="horizontalLine"></div>
+  </ion-grid>
+  <div>
+    <button class="button" (click)="goPageNewSearchCriteres()">
+      <p class="textButton">
+        {{ "new_search_page_more_criterias_label" | translate }}
+      </p>
+      <img src="/assets/img/plus2.png" class="plus" />
+    </button>
+  </div>
+  <!-- <div class="divButton">
+    <div class="divImg1" (click)="goPageNewSearchCriteresDetails()">
+      <img src="/assets/img/icon2Tiret.png" class="tiret" />
+    </div>
+    <div class="divButtonContinue">
+      <button
+        class="buttonContinue"
+        [disabled]="
+          valueParamMetier == null ||
+          valueParamSecteur == null ||
+          valueParamZoneGeo == null
+        "
+      >
+        <p class="textButtonContinue">{{ "continue_button" | translate }}</p>
+      </button>
+    </div>
+  </div> -->
+  <div *ngIf='footer' class="divButtonContinue">
+    <button (click)='toggleFooter()' [class.buttonContinue]='!state' [class.button2]='state' [disabled]="valueParamMetier == null || valueParamSecteur == null || valueParamZoneGeo == null ">
+      <p *ngIf='!state' class="textButtonContinue" (click)="doSearch()">{{ "continue_button" | translate }}</p> 
+       <p *ngIf='state' class="textButton2">LANCER</p></button>
+     
+</div>
+</ion-content>
+<lib-ionic-pullup *ngIf='footer' (dragged)="onDrag($event)"  (expanded)="footerExpanded()" (collapsed)="footerCollapsed()" [(state)]="footerState" [toolbarTopMargin]="100" [minBottomVisible]="70">
+
+  <ion-toolbar  color="light" class="toolbar" (click)="toggleFooter()" #ionDragFooter>
+    <div class="divImg1">
+    <img src="/assets/img/icon2Tiret.png" class="tiret" />
+  </div>
+  </ion-toolbar>
+  <ion-content class="background2" *ngIf='!state'>        
+    <!-- <div class="divButtonContinue">
+      <button class="buttonContinue" [disabled]="valueParamMetier == null || valueParamSecteur == null || valueParamZoneGeo == null "><p class="textButtonContinue">{{ "continue_button" | translate }}</p></button>
+  </div> -->
+  </ion-content>
+  <ion-content class="background2" *ngIf='state'>        
+    <div class="content">
+      <p class="titleContent">Titre </p>
+      <ion-card class="card1">
+        <p class="textCard1">Data Scientist dans le secteur de la Santé, Forme et bien être et le Sport en plein air en region parisienne.</p>
+      </ion-card>
+      <p class="titleContent">Motif</p>
+      <ion-card class="card2">
+        <p class="textCard2"> Zagett est extrêment pertinent sur le devellopement de contenu et a notamment fondé la content factory de Sephora. Il aimerait te rencontrer et te présenter des cas qui pourrait vraiment t’interesser.</p>
+      </ion-card>
+      <p class="text">Ce message doit toujours être écrit à <span>la 3ème personne</span>, c'est ce <br> texte que vos amis receveront <span>par message LinkedIn</span>  pour <br> indiquer la raison de la mise en contact.</p>
+      <!-- <div class="center">
+        <button class="button2"><p class="textButton2">LANCER</p></button>
+      </div> -->
+    </div>
+  </ion-content>
+  </lib-ionic-pullup>

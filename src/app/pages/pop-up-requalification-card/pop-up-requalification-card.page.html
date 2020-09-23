@@ -1,0 +1,29 @@
+<ion-content fullscreen scroll-y="false">
+  <ion-grid>
+    <ion-row class="rowTitle">
+      <ion-col>
+        <p class="text1" (click)='closeModal()'>{{ 'later_label' | translate }}</p>
+      </ion-col>
+      <ion-col>
+        <img src='/assets/images/iconGoBack.png' class="icon" (click)='closeModal()'/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="card">
+    <div class="center">
+      <img src='/assets/images/profil3.png' class="img"/>
+    </div>
+    <p class="text2">Jerôme DL</p>
+    <p class="text3">Developpeur Full Stack <br> PhP Mysql</p>
+    <p class="text4">Cap Gemini</p>
+  </ion-card>
+  <!-- <ion-row class="row"> -->
+    <div class="center">
+      <img src='/assets/images/no.png' class="img2" (click)='closeModal()'/>
+      <img src='/assets/images/iconEditShadow.png' class="img3" (click)='openModalNotification()'/>
+    </div>
+
+  <!-- </ion-row> -->
+
+</ion-content>

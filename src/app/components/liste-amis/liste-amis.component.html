@@ -1,0 +1,211 @@
+<div (click)='closeModalFiltre()' *ngIf='showFiltre' class="filtre">
+  <ion-slides [options]="option1" (ionSlideDrag)="slideChangedd($event)">
+    <ion-slide >
+  <div class="divPopOver">
+    <div class="heightDiv"></div>
+    <div class="tiret">
+    </div>
+    <div (click)='click5()'>
+      <img [hidden]='!clicked5' src='/assets/img/tick.png' class="tick" />
+      <p class="text3PopOver" [class.text2PopOver]='clicked5'>Par ordre alphabétique A-Z</p>
+    </div>
+    <div class="lineHorizontalPopOver"></div>
+    <div (click)='click1()'>
+      <img [hidden]='!clicked1' src='/assets/img/tick.png' class="tick" />
+      <p class="text3PopOver" [class.text2PopOver]='clicked1'>Le plus de résultat</p>
+    </div>
+    <div class="lineHorizontalPopOver"></div>
+    <div (click)='click2()'>
+      <img [hidden]='!clicked2' src='/assets/img/tick.png' class="tick" />
+      <p class="text3PopOver" [class.text2PopOver]='clicked2'>Le moins de résultat</p>
+    </div>
+    <div class="lineHorizontalPopOver"></div>
+    <div (click)='click3()'>
+      <img [hidden]='!clicked3' src='/assets/img/tick.png' class="tick" />
+      <p class="text3PopOver" [class.text2PopOver]='clicked3'>Du plus récent au plus ancien</p>
+    </div>
+    <div class="lineHorizontalPopOver"></div>
+    <div (click)='click4()'>
+      <img [hidden]='!clicked4' src='/assets/img/tick.png' class="tick" />
+      <p class="text3PopOver" [class.text2PopOver]='clicked4'>Du plus ancien au plus récent</p>
+    </div>
+    <div class="lineHorizontalPopOver"></div>
+  </div>
+  </ion-slide>
+  </ion-slides>
+</div>
+<ion-input class="inputRech" (focusin)='onFocus()' (focusout)='onBlur()' placeholder="{{ 'profil_tab3_search_contact_text_input_placeholder' | translate }}" [class.focusedInput]='focused'  [(ngModel)]='valueInput'>
+  <img src='/assets/img/smallSearchBlack.png' class="imgSearch2"/>
+  <!-- <p *ngIf='focused == false && valueInput == "" ' class="textInput">
+    {{ 'profil_tab3_search_contact_text_input_placeholder' | translate }}
+  </p> -->
+</ion-input>
+<div class="horizontalLine"></div>
+<div>
+  <ion-col>
+    <p class="textContact" >{{ 'profil_tab3_friends_list_header_title' | translate }}</p>
+    <p class="textContact2">{{ 'profil_tab3_friends_list_header_subtitle' | translate }}</p>
+  </ion-col>
+  <div>
+    <img src='/assets/img/fleche.png' (click)='openModalFiltre()' class="fleche"/>
+  </div>
+</div>
+<div *ngFor='let ami of listResult'>
+  <ion-slides *ngIf='!ami.slide' #slides (ionSlideDrag)="slideChanged($event,ami)" [options]="slideOpts">
+    <div  class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;">
+      <ion-slide>
+        <ion-row class="row1">
+          <ion-avatar class="imgInvit">
+            <img [src]='ami.thumbnail_path' />
+          </ion-avatar>
+          <ion-col>
+            <p class="textName">{{ami.first_name}} {{ami.last_name}}</p>
+            <p class="textJob">{{ami.poste}}</p>
+            <ion-row *ngIf="ami.hits">
+              <img src='/assets/images/cercle.svg' class="cercle"/>
+              <p class="textCercle"><span>{{ami.hits}}</span>{{ 'profil_tab3_my_contacts_list_number_of_opportunities' | translate }}</p>
+            </ion-row>
+          </ion-col>
+          <button class='buttonRetirer' (click)='changeSlide(ami)'>
+            <img src="/assets/img/remove.png" class="remove" />
+          </button>
+        </ion-row>
+      </ion-slide>
+      <ion-slide >
+        <div class="buttonRetirer2">
+          <p class="textRetirer">retirer</p>
+        </div>
+      </ion-slide>
+    
+    </div>
+  
+  </ion-slides>
+
+</div>
+<div *ngFor='let invitation of invitations'>
+ 
+  <ion-row class="row1" *ngIf="invitation.sender.first_name">
+    <ion-avatar class="imgInvit2">
+      <img *ngIf="invitation.sender.thumbnail_path" class="imgInvit2" [src]='invitation.sender.thumbnail_path' [class.opacity]='true' />
+      <img *ngIf="!invitation.sender.thumbnail_path" class="imgInvit2" src='/assets/images/profile.png' [class.opacity]='true' />
+    </ion-avatar>
+    <ion-col>
+      <p class="textName2" [class.opacity]='true'>{{invitation.sender.first_name}} {{invitation.sender.last_name}}</p>
+      <p class="textJob2" [class.opacity]='true'>{{invitation.sender.poste}}</p>
+      <ion-row>
+        <img src='/assets/images/cercle.svg' class="cercle2" [class.opacity]='true'/>
+        <p class="textCercle" [class.opacity]='true'><span>58</span> {{ 'profil_tab3_my_contacts_list_number_of_opportunities' | translate }}</p>
+      </ion-row>
+    </ion-col>
+    <button class='buttonAttente' [class.opacity]='true'>
+      <img src="/assets/img/wait.png" class="wait"/>
+    </button>
+  </ion-row>
+  <ion-row class="row1" *ngIf="invitation.receiver.first_name">
+    <ion-avatar class="imgInvit" >
+      <img *ngIf="invitation.receiver.thumbnail_path" [src]='invitation.receiver.thumbnail_path' [class.opacity]='true'/>
+      <img *ngIf="!invitation.receiver.thumbnail_path"  src='/assets/images/profile.png' [class.opacity]='true'/>
+    </ion-avatar>
+     
+
+    <ion-col>
+      <p class="textName" [class.opacity]='true'>{{invitation.receiver.first_name}} {{invitation.receiver.last_name}}</p>
+      <p class="textJob" [class.opacity]='true'>{{invitation.receiver.poste}}</p>
+      <ion-row>
+        <img src='/assets/images/cercle.svg' class="cercle" [class.opacity]='true'/>
+        <p class="textCercle" [class.opacity]='true'><span>58</span> {{ 'profil_tab3_my_contacts_list_number_of_opportunities' | translate }}</p>
+      </ion-row>
+    </ion-col>
+    <button class='buttonAttente' [class.opacity]='true'>
+      <img src="/assets/img/wait.png" class="wait"/>
+    </button>
+  </ion-row> 
+</div>
+
+
+<!-- <ion-slides *ngIf='!slidechanged' #slides (ionSlideDrag)="slideChanged($event)">
+  <div  class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);
+  transition-duration: 0ms;">
+    <ion-slide>
+      <ion-row class="row1">
+        <img src='/assets/img/imgArnaud.png' class="imgInvit"/>
+        <ion-col>
+          <p class="textName">{{trimString('Arnaud Gazet',28)}}</p>
+          <p class="textJob">{{trimString('Président fondateur musicien en chef responsable Covid 19 Président fondateur musicien en chef responsable Covid 19',60)}}</p>
+          <ion-row>
+            <img src='/assets/images/cercle.svg' class="cercle"/>
+            <p class="textCercle"><span>58</span> opportunitées</p>
+          </ion-row>
+        </ion-col>
+        <button class='buttonRetirer' (click)='goToSlide()'>
+          <img src="/assets/img/remove.png" class="remove" />
+        </button>
+      </ion-row>
+    </ion-slide>
+    <ion-slide >
+      <div class="buttonRetirer2">
+  
+      </div>
+    </ion-slide>
+  
+  </div>
+
+</ion-slides>
+<ion-slides *ngIf='slidechanged' #slides (ionSlideDrag)="slideChanged($event)">
+  <div  class="swiper-wrapper" style="transform: translate3d(-142px, 0px, 0px);
+  transition-duration: 0ms;">
+    <ion-slide>
+      <ion-row class="row1">
+        <img src='/assets/img/imgArnaud.png' class="imgInvit"/>
+        <ion-col>
+          <p class="textName">{{trimString('Arnaud Gazet',28)}}</p>
+          <p class="textJob">{{trimString('Président fondateur musicien en chef responsable Covid 19 Président fondateur musicien en chef responsable Covid 19',60)}}</p>
+          <ion-row>
+            <img src='/assets/images/cercle.svg' class="cercle"/>
+            <p class="textCercle"><span>58</span> opportunitées</p>
+          </ion-row>
+        </ion-col>
+        <button class='buttonRetirer' (click)='goToSlide()'>
+          <img src="/assets/img/remove.png" class="remove" />
+        </button>
+      </ion-row>
+    </ion-slide>
+    <ion-slide >
+      <div class="buttonRetirer2">
+  
+      </div>
+    </ion-slide>
+ 
+  </div>
+
+</ion-slides> -->
+
+<!-- <ion-row class="row1">
+  <img src='/assets/img/imgArnaud.png' class="imgInvit"/>
+  <ion-col>
+    <p class="textName">{{trimString('Arnaud Gazet',28)}}</p>
+    <p class="textJob">{{trimString('Président fondateur',60)}}</p>
+    <ion-row>
+      <img src='/assets/images/cercle.svg' class="cercle"/>
+      <p class="textCercle"><span>58</span> {{ 'profil_tab3_my_contacts_list_number_of_opportunities' | translate }}</p>
+    </ion-row>
+  </ion-col>
+  <button class='buttonRetirer '>
+    <img src="/assets/img/remove.png" class="remove" />
+  </button>
+</ion-row>
+<ion-row class="row1">
+  <img src='/assets/img/imgArnaud.png' class="imgInvit" [class.opacity]='true'/>
+  <ion-col>
+    <p class="textName" [class.opacity]='true'>{{trimString('Arnaud Gazet',28)}}</p>
+    <p class="textJob" [class.opacity]='true'>{{trimString('Président fondateur',60)}}</p>
+    <ion-row>
+      <img src='/assets/images/cercle.svg' class="cercle" [class.opacity]='true'/>
+      <p class="textCercle" [class.opacity]='true'><span>58</span> {{ 'profil_tab3_my_contacts_list_number_of_opportunities' | translate }}</p>
+    </ion-row>
+  </ion-col>
+  <button class='buttonAttente' [class.opacity]='true'>
+    <img src="/assets/img/wait.png" class="wait"/>
+  </button>
+</ion-row>  -->

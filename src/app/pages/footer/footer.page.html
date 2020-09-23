@@ -1,0 +1,29 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <div
+      class="background"
+      *ngIf="
+        sharedDataService.popupAccept ||
+        sharedDataService.popupDecline ||
+        sharedDataService.popupShake
+      "
+      (click)="closePopup()"
+    ></div>
+    <div
+    class="background2"
+    *ngIf="sharedDataService.popupFiltre"
+    (click)="closePopup()"
+  ></div>
+    <ion-tab-button tab="searchTab1">
+      <ion-img class="iconSearchTab"></ion-img>
+    </ion-tab-button>
+    <ion-tab-button tab="synchTab2" class="buttonIconRectangle2">
+      <ion-img class="iconRectangle2"></ion-img>
+    </ion-tab-button>
+    <ion-tab-button tab="profilTab3">
+      <ion-avatar class="imgTab">
+        <ion-img [src]="pictureUser"></ion-img>
+      </ion-avatar>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

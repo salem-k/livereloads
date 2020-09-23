@@ -1,0 +1,327 @@
+<div class="scroll"  (scroll)='onScroll($event)'>
+<ion-grid>
+  <div class="pageShadow">
+
+  </div>
+  <ion-row class="rowIcon">
+    <ion-col>
+      <img *ngIf='!historyPage2' src='/assets/images/iconClose.svg' (click)='goHistory2()' class='iconClose'/>
+      <img *ngIf='historyPage2' src='/assets/images/close.png' class='iconClose1'/>
+    </ion-col>
+    <ion-col>
+      <img *ngIf='!historyPage2' src='/assets/images/iconSmallLogo.svg' class='iconSmallLogo'/>
+      <img *ngIf='historyPage2' src='/assets/images/logoGray.png' (click)='goHistory()' class='iconSmallLogo'/>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid *ngIf='!historyPage2' [class.mover]='!historyPage2  && clicked'>
+  <ion-row>
+    <ion-col size='2'>
+      <img src='/assets/images/iconEditBlack.svg' class='iconEditBlack'/>
+    </ion-col>
+    <ion-col size='8'>
+      <p class="textWait">{{ 'history_component_pending_sending' | translate }} (3)</p>
+    </ion-col>
+    <ion-col size=2>
+      <img *ngIf='listWaitingSent == true'  src='/assets/images/iconMinus.svg' class='iconPlus1'
+        (click)='hideListWaitingSent()'/>
+        <img *ngIf='listWaitingSent == false' src='/assets/images/iconPlus.svg' class='iconPlus1'
+        (click)='showListWaitingSent()'/>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf='listWaitingSent == false'>
+    <ion-col size='1'>
+      <div class="verticalLine2"></div>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf='listWaitingSent == true'>
+    <ion-col size='1'>
+      <div class="verticalLine"></div>
+    </ion-col>
+    <ion-col  size='11'>
+      <div class="listCardHistory1"> 
+        <ion-card class="cardHistory">
+          <img src='/assets/images/iconSmallEdit.svg' class='iconSmallEdit'/>
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil'/>
+          </div>
+          <p class="nameCardHistory"> Salem <br> Kammoun</p>
+          <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard">Cap Gemini</p>
+        </ion-card>
+        <ion-card class="cardHistory">
+          <img src='/assets/images/iconSmallEdit.svg' class='iconSmallEdit'/>
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil'/>
+          </div>
+          <p class="nameCardHistory"> Salem <br> Kammoun</p>
+          <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+          <img src='/assets/images/iconSmallEdit.svg' class='iconSmallEdit'/>
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil'/>
+          </div>
+          <p class="nameCardHistory"> Salem <br> Kammoun</p>
+          <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard">Cap Gemini</p>
+        </ion-card>
+      </div>
+    </ion-col>
+
+
+  </ion-row>
+  <ion-row>
+    <ion-col size='2'>
+      <img src='/assets/images/iconTimeBlack.svg' class='iconTimeBlack'/>
+    </ion-col>
+    <ion-col size='8'>
+      <p class="textWaitValid">{{ 'history_component_pending_validation' | translate }} (8)</p>
+    </ion-col>
+    <ion-col size=2>
+      <img *ngIf='listWaiting == true' src='/assets/images/iconMinus.svg' class='iconPlus'
+        (click)='hideListWaiting()'/>
+      <img *ngIf='listWaiting == false' src='/assets/images/iconPlus.svg' class='iconPlus'
+        (click)='showListWaiting()'/>
+    </ion-col>
+
+
+  </ion-row>
+  <ion-row *ngIf='listWaiting == false'>
+    <ion-col size='1'>
+      <div class="verticalLine2"></div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf='listWaiting == true'>
+    <ion-col size='1'>
+      <div class="verticalLine"></div>
+    </ion-col>
+    <ion-col size='11'>
+      <div class="listCardHistory2">
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+      </div>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col size='2'>
+      <img src='/assets/images/smallLogo.svg' class='smallLogo'/>
+    </ion-col>
+    <ion-col size='8'>
+      <p class="textAccept">{{ 'history_component_accepted_requests' | translate }} (7)</p>
+    </ion-col>
+    <ion-col size='2'>
+      <img *ngIf='listAccept == true' src='/assets/images/iconMinus.svg' class='iconPlus3'
+        (click)='hideListAccept()'/>
+      <img *ngIf='listAccept == false' src='/assets/images/iconPlus.svg' class='iconPlus3'
+        (click)='showListAccept()'/>
+    </ion-col>
+
+
+  </ion-row>
+
+  <ion-row *ngIf='listAccept == true'>
+    <ion-col size='1'>
+      <div class="verticalLine3"></div>
+    </ion-col>
+    <ion-col size='11'>
+      <div class="listCardHistory2">
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+
+        <ion-card class="cardHistory">
+
+          <div class="center">
+            <img src='/assets/images/salem.svg' class='profil2'/>
+          </div>
+          <p class="nameCardHistory2"> Salem <br> Kammoun</p>
+          <p class="jobCard2">Developpeur Full Stack PhP Mysql </p>
+          <p class="textCard2">Cap Gemini</p>
+        </ion-card>
+      </div>
+    </ion-col>
+
+
+  </ion-row>
+</ion-grid>
+<div *ngIf='historyPage2' class="mover">
+  <ion-grid>
+    <!-- <ion-row>
+      <p class="textDecline">Déclinées (12) </p>
+    </ion-row> -->
+    <ion-row>
+      <ion-col size='2'>
+        <div class="divImg"></div>
+      </ion-col>
+      <ion-col size='8'>
+        <p class="textDecline">{{ 'history_component_declined_requests' | translate }} (12)</p>
+      </ion-col>
+      
+    </ion-row>
+    <ion-row >
+      <ion-col size='1'>
+        <div class="verticalLine4"></div>
+      </ion-col>
+      <ion-col  size='11'>
+        <div class="listCardHistory1">
+          <ion-card class="cardHistory2">
+            <div class="center">
+              <img src='/assets/images/salem.svg' class='profil'/>
+            </div>
+            <p class="nameCardHistory"> Salem <br> Kammoun</p>
+            <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+            <p class="textCard">Cap Gemini</p>
+          </ion-card>
+          <ion-card class="cardHistory2">
+            <div class="center">
+              <img src='/assets/images/salem.svg' class='profil'/>
+            </div>
+            <p class="nameCardHistory"> Salem <br> Kammoun</p>
+            <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+            <p class="textCard">Cap Gemini</p>
+          </ion-card>
+          <ion-card class="cardHistory2">
+            <div class="center">
+              <img src='/assets/images/salem.svg' class='profil'/>
+            </div>
+            <p class="nameCardHistory"> Salem <br> Kammoun</p>
+            <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+            <p class="textCard">Cap Gemini</p>
+          </ion-card>
+          <ion-card class="cardHistory2">
+            <div class="center">
+              <img src='/assets/images/salem.svg' class='profil'/>
+            </div>
+            <p class="nameCardHistory"> Salem <br> Kammoun</p>
+            <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+            <p class="textCard">Cap Gemini</p>
+          </ion-card>
+        </div>
+      </ion-col>
+  
+  
+    </ion-row>
+    <p class="textVoirTout">{{ 'history_component_see_all' | translate }}</p>
+  </ion-grid>
+<!-- <div class="listCard">
+  <ion-card class="cardHistory2">
+    <ion-img src='/assets/images/salem.svg' class='profil'></ion-img>
+    <p class="nameCardHistory"> Salem <br> Kammoun</p>
+    <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+    <p class="textCard">Cap Gemini</p>
+  </ion-card>
+  <ion-card class="cardHistory2">
+    <ion-img src='/assets/images/salem.svg' class='profil'></ion-img>
+    <p class="nameCardHistory"> Salem <br> Kammoun</p>
+    <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+    <p class="textCard">Cap Gemini</p>
+  </ion-card>
+
+  <ion-card class="cardHistory2">
+    <ion-img src='/assets/images/salem.svg' class='profil'></ion-img>
+    <p class="nameCardHistory"> Salem <br> Kammoun</p>
+    <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+    <p class="textCard">Cap Gemini</p>
+  </ion-card>
+
+  <ion-card class="cardHistory2">
+    <ion-img src='/assets/images/salem.svg' class='profil'></ion-img>
+    <p class="nameCardHistory"> Salem <br> Kammoun</p>
+    <p class="jobCard">Developpeur Full Stack PhP Mysql </p>
+    <p class="textCard">Cap Gemini</p>
+  </ion-card>
+</div>
+<p class="textVoirTout">Voir tout</p> -->
+</div>
+</div>

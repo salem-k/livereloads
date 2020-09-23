@@ -1,0 +1,85 @@
+<ion-header class="header">
+  <p class='title' [innerHTML]="'sync_linked_in_page_title' | translate"></p>
+</ion-header>
+<ion-content fullscreen scroll-y="false">
+  <ion-grid>
+    <ion-row class='row1'>
+      <ion-col size='1'>
+        <ion-icon *ngIf='!toggleValue1' name="checkmark-outline" class="icon1"></ion-icon>
+        <ion-icon *ngIf='toggleValue1' name="checkmark-outline" class="icon2"></ion-icon>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text1">{{ 'sync_linked_in_page_import_contacts' | translate }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class='row2'>
+      <ion-col size='1'>
+        <ion-icon *ngIf='!toggleValue2' name="checkmark-outline" class="icon1"></ion-icon>
+        <ion-icon *ngIf='toggleValue2' name="checkmark-outline" class="icon2"></ion-icon>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text2">{{ 'sync_linked_in_page_send_messages' | translate }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class='row2'>
+      <ion-col size='1'>
+        <ion-icon *ngIf='!toggleValue3' name="checkmark-outline" class="icon1"></ion-icon>
+        <ion-icon *ngIf='toggleValue3' name="checkmark-outline" class="icon2"></ion-icon>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text3">{{ 'sync_linked_in_page_search_profiles' | translate }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row class="rowCheckBox">
+      <ion-col size='1'>
+        <ion-checkbox  *ngIf='!toggleValue4' class="checkBox1" checked='true'> </ion-checkbox>
+        <ion-checkbox  *ngIf='toggleValue4' class="checkBox2" checked='true'> </ion-checkbox>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="textCheckBox">Restez connecté à Linkedin</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+  <ion-card class='card' (click)='cardToggle()'>
+    <ion-grid>
+      <ion-row>
+        <ion-col size='3'>
+          <ion-toggle class='ion-toggle' checked='{{toggleValue}}' (click)="toggle()"></ion-toggle>
+        </ion-col>
+        <ion-col size='9'>
+          <p class='textAccept'>{{ 'sync_linked_in_page_accept_conditions' | translate }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <!-- <div class="center">
+    <button  [disabled]="!buttonSynchronize"   class='buttonSynchrize2' (click)="loginWithLinkedIn()">
+            
+            <p class='textButtonSynch'><span class='iconLinkedIn'>in</span><span class="textSpan">{{ 'sync_linked_in_page_synchronize' | translate }}</span></p>
+    </button>
+   
+  </div> -->
+</ion-content>
+<ion-footer class="footer">
+  <div class="center">
+    <button  [disabled]="!buttonSynchronize"   class='buttonSynchrize2' (click)="loginWithLinkedIn()">
+            
+            <p class='textButtonSynch'><span class='iconLinkedIn'>in</span><span class="textSpan">{{ 'sync_linked_in_page_synchronize' | translate }}</span></p>
+    </button>
+   
+  </div>
+  
+  <p   class="textConnect" (click)='goLoginScreen()'>{{ 'connect_button' | translate }}</p>
+  
+  
+</ion-footer>

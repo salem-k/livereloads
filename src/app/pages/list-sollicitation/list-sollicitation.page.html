@@ -1,0 +1,138 @@
+<ion-content fullscreen scroll-y="false">
+  <div [class.shadowDiv]='scrollEvent'>
+    <p class='title'>{{ 'list_sollicitation_page_title' | translate }}</p>
+    <p class='subTitle'>{{ 'list_sollicitation_page_subtitle' | translate }}</p>
+    <div [hidden]='!scrollEvent'  class="heightShadow">
+
+    </div>
+    <hr [hidden]='scrollEvent'  [class.line]='!scrollEvent' >
+    <hr [class.line2]='scrollEvent' >
+  </div>
+ 
+  
+  <div class="scroll"  (scroll)='onScroll($event)'  >
+    <ion-card>
+      <ion-grid>
+        <ion-row class="row1">
+            <img src='/assets/images/arnaud.svg' class="img"/>
+          <ion-col>
+            <p class='name'>Arnaud Gazet</p>
+            <p class='text'>SalesFriends</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class='text2'>{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+            <p class='text3'>Direction Marketing et communication.</p>
+          </ion-col>
+        </ion-row>
+            <img src='/assets/images/cercle.svg' class='cercle'/>
+            <p class="text4"[innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+            <button class="buttonClass" (click)="openModalMotif()">
+              <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+            </button>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card>
+      <ion-grid>
+        <ion-row class="row1">
+            <img src='/assets/images/arnaud.svg' class="img"/>
+          <ion-col>
+            <p class='name'>Arnaud Gazet</p>
+            <p class='text'>SalesFriends</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class='text2'>{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+            <p class='text3'>Direction Marketing et communication.</p>
+          </ion-col>
+        </ion-row>
+            <img src='/assets/images/cercle.svg' class='cercle'/>
+            <p class="text4"[innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+            <button class="buttonClass" (click)="openModalMotif()">
+              <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+            </button>
+      </ion-grid>
+    </ion-card>
+   
+    <ion-card>
+      <ion-grid>
+        <ion-row class="row1">
+            <img src='/assets/images/arnaud.svg' class="img"/>
+          <ion-col>
+            <p class='name'>Arnaud Gazet</p>
+            <p class='text'>SalesFriends</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class='text2'>{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+            <p class='text3'>Direction Marketing et communication.</p>
+          </ion-col>
+        </ion-row>
+            <img src='/assets/images/cercle.svg' class='cercle'/>
+            <p class="text4"[innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+            <button class="buttonClass" (click)="openModalMotif()">
+              <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+            </button>
+      </ion-grid>
+    </ion-card>
+   
+    <ion-card>
+      <ion-grid>
+        <ion-row class="row1">
+            <img src='/assets/images/arnaud.svg' class="img"/>
+          <ion-col>
+            <p class='name'>Arnaud Gazet</p>
+            <p class='text'>SalesFriends</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class='text2'>{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+            <p class='text3'>Direction Marketing et communication.</p>
+          </ion-col>
+        </ion-row>
+            <img src='/assets/images/cercle.svg' class='cercle'/>
+            <p class="text4"[innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+            <button class="buttonClass" (click)="openModalMotif()">
+              <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+            </button>
+      </ion-grid>
+    </ion-card>
+   
+    <ion-card>
+      <ion-grid>
+        <ion-row class="row1">
+            <img src='/assets/images/arnaud.svg' class="img"/>
+          <ion-col>
+            <p class='name'>Arnaud Gazet</p>
+            <p class='text'>SalesFriends</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class='text2'>{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+            <p class='text3'>Direction Marketing et communication.</p>
+          </ion-col>
+        </ion-row>
+            <img src='/assets/images/cercle.svg' class='cercle'/>
+            <p class="text4"[innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+            <button class="buttonClass" (click)="openModalMotif()">
+              <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+            </button>
+      </ion-grid>
+    </ion-card>
+   
+    
+  </div>
+
+
+</ion-content>

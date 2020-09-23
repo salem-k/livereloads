@@ -1,0 +1,16 @@
+
+<ion-content scroll-y="false">
+  <app-on-boarding-decline *ngIf="sharedDataService.popupDecline"></app-on-boarding-decline>
+  <app-on-boarding-introduction *ngIf="sharedDataService.popupAccept"></app-on-boarding-introduction>
+  <app-on-boarding-shaker-feedback *ngIf="sharedDataService.popupShake"></app-on-boarding-shaker-feedback>
+<ion-card class="card">
+  <ion-img src='/assets/images/profil6.png' class="img"></ion-img>
+  <p class="text2">Sylvain Durif</p>
+  <p class="text3">Christ Cosmique</p>
+  <p class="text4">Ombaya</p>
+</ion-card>
+<ion-row class="row">
+  <ion-img src='/assets/images/noIcon.png' class="img2"  [class.img2IOS]="sharedDataService.popupDecline " ></ion-img>
+  <ion-img src='/assets/images/superLike.png' class="img3"  [class.img3IOS]=" sharedDataService.popupAccept " ></ion-img>
+</ion-row>
+</ion-content>

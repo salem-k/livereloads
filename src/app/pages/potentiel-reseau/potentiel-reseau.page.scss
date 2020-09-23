@@ -1,0 +1,418 @@
+
+.header-md::after {
+    background: none;
+}
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+.focusedInput {
+    border: 1px solid;
+    border-color: #39639d;
+    --placeholder-color: transparent !important;
+}
+.headerListeAmis {
+    // height: 94px;
+    background: #F9F9F9;
+}
+.rowHeader {
+    margin-top: 16px;
+}
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 18px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -25px;
+}
+.ios .iconGoBack {
+    height: 18px;
+    width: 8px;
+    margin-top: 25px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+.ios .title {
+    font-size: 16px;
+    margin-top: 25px;
+}
+.borderheader {
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+}
+.iconOpportunity {
+    width: 18.89px;
+    height: 16.71px;
+    margin-right: 15.17px;
+    margin-top: -1px;
+}
+.textOpportunity {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 115% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #39649E;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.rowHeader2 {
+    justify-content: center;
+}
+.inputRech {
+    width: 335px;
+    height: 34px;
+    background: #F2F2F2;
+    border-radius: 15px;
+    margin: auto;
+    // margin-top: 18px;
+    margin-bottom: 35px;
+    margin-left: 25px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    --placeholder-color: #000000;
+    //--placeholder-opacity: 9;
+    --placeholder-opacity: 1;
+    margin-top: 23.17px;
+}
+.textInput {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 102% */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 13px;
+}
+.imgSearch2 {
+    width: 16px;
+    height: 16px;
+    margin-left: 19px;
+    margin-top: 0px;
+    margin-right: 11px;
+    //opacity: 0.4;
+}
+.separatorHeader {
+    width: 100%;
+    height: 1px;
+    background: #EAEAEA;
+}
+.textContact {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #C4C4C4;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.textContact2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 146.9%;
+    /* identical to box height, or 15px */
+    letter-spacing: 0.24px;
+    
+    color: #39639D;
+    margin-left: 30px;
+    margin-top: -7px;
+}
+.fleche {
+    width: 17px;
+    height: 19px;
+    float: right;
+    margin-top: -58px;
+    margin-right: 27px;
+    outline: none;
+    position: relative;
+}
+.imgInvit {
+    width: 43px;
+    height: 43.2px;
+    margin-left: 20px;
+}
+.textName {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    color: #000000;
+    margin-top: -7px;
+    margin-left: 12px;
+    width: 211px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-height: 16px;
+    max-height: 18px;
+    -webkit-box-orient: vertical;
+}
+.textName2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    color: #000000;
+    margin-top: -7px;
+    margin-left: 12px;
+    width: 149px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-height: 16px;
+    max-height: 18px;
+    -webkit-box-orient: vertical;
+    opacity: 0.5;
+}
+.textJob {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -13px;
+    margin-left: 12px;
+    width: 211px;
+    // height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 16px;
+    max-height: 34px;
+    -webkit-box-orient: vertical;
+}
+.textJob2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -13px;
+    margin-left: 12px;
+    width: 149px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 16px;
+    max-height: 34px;
+    -webkit-box-orient: vertical;
+    opacity: 0.5;
+}
+.buttonAjout {
+    width: 38px;
+    height: 22px;
+    background: #39639D;
+    border-radius: 11px;
+    margin-right: 25px;
+    margin-top: 11px;
+    outline: none;
+    line-height: normal;
+}
+.imgButtonAjout {
+    width: 9px;
+    height: 9px;
+}
+.cercle {
+    width: 14.67px;
+    height: 9px;
+    margin-left: 12px;
+    margin-top: -7px;
+}
+.cercle2 {
+    width: 14.67px;
+    height: 9px;
+    margin-left: 23px;
+    margin-top: -7px;
+}
+.textCercle {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 13px;
+    /* identical to box height, or 104% */
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -9px;
+    margin-left: 7px;
+}
+.imgInviteButton {
+    width: 13.54px;
+    height: 9.95px;
+}
+.textCercle2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 13px;
+    /* identical to box height, or 104% */
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -9px;
+    margin-left: 7px;
+    opacity: 0.5;
+}
+.textCercle span {
+    color: #39649E;
+    margin-right: 3px;
+}
+.opacity {
+    opacity: 0.5;
+}
+.buttonWaiting {
+    width: 101px;
+    height: 32px;
+    background: transparent;
+    opacity: 0.5;
+    margin-right: 30px;
+}
+.textButtonWaiting {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #C4C4C4;
+}
+
+.divButtom {
+    position: fixed;
+    width: 100%;
+    height: 152px;
+    bottom: 0px;
+
+    background: #366AA0;
+}
+.textActiveRech {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'UntitledSans';
+    margin-left: 23px;
+    margin-top: 50px;
+    float: left;
+}
+.toggle {
+    width: 52px;
+    height: 26px;
+    width: 52px;
+    height: 26px;
+    --handle-height: 22px;
+    --handle-width: 22px;
+    --background: linear-gradient(107.21deg, #FFFFFF 5.87%, #FFFFFF 5.88%, #DBD9D9 99.34%);
+    --border-radius: 20px;
+    --handle-background: linear-gradient(319.09deg, #C4C4C4 -11.69%, #828282 84.25%);
+    --handle-box-shadow: none;
+    float: right;
+    margin-top: 43px;
+    margin-right: 23px;
+}
+.textActiveRech2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 146.9%;
+    letter-spacing: 0.24px;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 23px;
+}
+.buttonAjouter {
+    float: right;
+    background: linear-gradient(125.3deg, #39639D 0%, #2789AE 103.13%);
+    width: 102px;
+    height: 32px;
+    margin-right: 23px;
+    margin-top: -15px;
+}
+.textButtonAjouter {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.row1 {
+    margin-bottom: 10px;
+    margin-left: 7px;
+    height: 70px;
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+        margin-bottom: 7px;
+    }
+    .ios .title {
+        margin-top: 25px;
+    }
+    .ios .textTitle {
+        margin-top: 25px;
+    }
+}
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 18px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}

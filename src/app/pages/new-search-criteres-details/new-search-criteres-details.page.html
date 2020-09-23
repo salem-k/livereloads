@@ -1,0 +1,23 @@
+<ion-content scroll-y="false">
+  <ion-grid class="header">
+    <ion-row class="rowHeader">
+      <img src='/assets/img/iconGoBackWhite.png' class='iconGoBack' (click)='goBack()'/>
+      <p class="title">{{ 'new_search_criterias_details_page_title' | translate }}</p>
+    </ion-row>
+  </ion-grid>
+  <div class="content">
+    <div class="center" (click)="closeModal()">
+      <img src='/assets/img/icon2Tiret.png' class="tiret" />
+    </div>
+    <p class="titleContent">{{ 'new_search_criterias_details_criteria_title_label' | translate }}</p>
+    <ion-card class="card1">
+      <p class="textCard1">Data Scientist dans le secteur de la Santé, Forme et bien être et le Sport en plein air en region parisienne.</p>
+    </ion-card>
+    <p class="titleContent">{{ 'new_search_criterias_details_criteria_subject_label' | translate }}</p>
+    <ion-card class="card2">
+      <p class="textCard2"> Zagett est extrêment pertinent sur le devellopement de contenu et a notamment fondé la content factory de Sephora. Il aimerait te rencontrer et te présenter des cas qui pourrait vraiment t’interesser.</p>
+    </ion-card>
+    <p class="text" [innerHTML]="'new_search_criterias_details_criteria_help_text' | translate"></p>
+    <button class="button"><p class="textButton">{{ 'launch_button' | translate }}</p></button>
+  </div>
+</ion-content>

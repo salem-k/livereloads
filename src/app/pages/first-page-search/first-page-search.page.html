@@ -1,0 +1,66 @@
+<ion-content class="background" scroll-y="false">
+  <div class="bg">
+    <ion-grid>
+      <ion-row class="rowHeader">
+        <img src='/assets/img/iconGoBackWhite.png' class='iconGoBack' (click)='goBack()'/>
+        <p class="title">Nouvelle recherche</p>
+      </ion-row>
+    </ion-grid>
+    <p class="text1">Critères</p>
+    <ion-grid>
+      <ion-row (click)='goPageNewSearchMetier()'>
+        <ion-col>
+          <ion-row>
+            <img src='/assets/img/metierIcon.png' class="iconMetier" />
+            <ion-col>
+              <p class="textMetier">Métier</p>
+              <p class="textInputMetier">{{valueParamMetier}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <img src='/assets/img/supWhite.png' class="supWhite" />
+      </ion-row>
+      <div class="horizontalLine"></div>
+      <ion-row (click)='goPageNewSearchSecteur()'>
+        <ion-col>
+          <ion-row>
+            <img src='/assets/img/secteurIcon.png' class="iconSecteur" />
+            <ion-col>
+              <p class="textMetier">Secteur</p>
+              <p class="textInputMetier">{{valueParamSecteur}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <img src='/assets/img/supWhite.png' class="supWhite" />
+      </ion-row>
+      <div class="horizontalLine"></div>
+      <ion-row (click)='goPageNewSearchZoneGeo()'>
+        <ion-col>
+          <ion-row>
+            <img src='/assets/img/zoneGeoIcon.png' class="iconZoneGeo" />
+            <ion-col>
+              <p class="textMetier">Zone géographique <span *ngIf='valueParamZoneGeo !== null'>(1)</span></p>
+              <p class="textInputMetier">{{valueParamZoneGeo}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <img src='/assets/img/supWhite.png' class="supWhite" />
+      </ion-row>
+      <div class="horizontalLine"></div>
+    </ion-grid>
+    <div>
+      <button class="button" (click)='goPageNewSearchCriteres()'>
+        <p class="textButton">Plus de critères</p>
+        <img src="/assets/img/plus2.png" class="plus"/>
+      </button>
+    </div>
+  </div>
+  <div class="bg2">
+    <div class="heightDiv"></div>
+    <p class="text2">Effectuer votre recherche en quelques clics</p>
+    <p class="text3">Vous pouvez ajouter des critères pour préciser<br> vos résultats</p>
+    <div class="divButtonContinue">
+      <button (click)='goPageSearch()' class="buttonContinue" ><p class="textButtonContinue">Continuer</p></button>
+  </div>
+  </div>
+</ion-content>

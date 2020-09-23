@@ -1,0 +1,75 @@
+:root {
+  /** primary **/
+  --ion-color-primary: #fd5068;
+  --ion-color-primary-rgb: 253,80,104;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #df465c;
+  --ion-color-primary-tint: #fd6277;
+
+  /** white **/
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255,255,255;
+  --ion-color-white-contrast: #000000;
+  --ion-color-white-contrast-rgb: 0,0,0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+
+  /** gold **/
+  --ion-color-gold: #d6a653;
+  --ion-color-gold-rgb: 214,166,83;
+  --ion-color-gold-contrast: #fff;
+  --ion-color-gold-contrast-rgb: 0,0,0;
+  --ion-color-gold-shade: #bc9249;
+  --ion-color-gold-tint: #daaf64;
+
+  /** boost **/
+  --ion-color-boost: #9e4dda;
+  --ion-color-boost-rgb: 158,77,218;
+  --ion-color-boost-contrast: #ffffff;
+  --ion-color-boost-contrast-rgb: 255,255,255;
+  --ion-color-boost-shade: #8b44c0;
+  --ion-color-boost-tint: #a85fde;
+
+  --color-button-revert: #ffc30a;
+  --color-button-dislike: #f95266;
+  --color-button-star: #16a9ef;
+  --color-button-like: #22e4a8;
+  --color-button-gold: #d6a653;
+  --color-button-boost: #9e4dda;
+  --color-tinder-stop1: #fd267d;
+  --color-tinder-stop2: #ff7854;
+
+  --matched-text-color: #82fbca;
+
+  /** GENERAL **/
+  --ion-text-color: #333333;
+  --ion-background-color: #ffffff;
+}
+
+.ion-color-white {
+  --ion-color-base: var(--ion-color-white);
+  --ion-color-base-rgb: var(--ion-color-white-rgb);
+  --ion-color-contrast: var(--ion-color-white-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+  --ion-color-shade: var(--ion-color-white-shade);
+  --ion-color-tint: var(--ion-color-white-tint);
+}
+
+.ion-color-gold {
+  --ion-color-base: var(--ion-color-gold);
+  --ion-color-base-rgb: var(--ion-color-gold-rgb);
+  --ion-color-contrast: var(--ion-color-gold-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-gold-contrast-rgb);
+  --ion-color-shade: var(--ion-color-gold-shade);
+  --ion-color-tint: var(--ion-color-gold-tint);
+}
+
+.ion-color-boost {
+  --ion-color-base: var(--ion-color-boost);
+  --ion-color-base-rgb: var(--ion-color-boost-rgb);
+  --ion-color-contrast: var(--ion-color-boost-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-boost-contrast-rgb);
+  --ion-color-shade: var(--ion-color-boost-shade);
+  --ion-color-tint: var(--ion-color-boost-tint);
+}

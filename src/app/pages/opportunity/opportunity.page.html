@@ -1,0 +1,126 @@
+<ion-header  class="headerListeAmis">
+  <div [class.bg]='showFiltre2'>
+  </div>
+  <ion-grid >
+    <ion-row class="rowHeader">
+      <img src='/assets/images/iconGoBack.png' class='iconGoBack' (click)='goBack()'/>
+      <p class="title">Ma liste d’amis</p>
+    </ion-row>
+  </ion-grid>
+  <ion-row class="rowHeader2">
+    <img src="/assets/img/cercle2.png" class="iconOpportunity"/> <p class="textOpportunity">420</p>
+  </ion-row>
+  <ion-input class="inputRech" (focusin)='onFocus()' (focusout)='onBlur()' placeholder="Rechercher un contact" [class.focusedInput]='focused' (ionInput)="search($event)" >
+    <img src='/assets/img/smallSearchBlack.png' class="imgSearch2"/>
+  </ion-input>
+  <div class="separatorHeader"></div>
+</ion-header>
+
+<ion-content>
+  <div (click)='closeModalFiltre()' *ngIf='showFiltre' class="filtre">
+    <ion-slides [options]="option1" (ionSlideDrag)="slideChangedd($event)">
+      <ion-slide >
+    <div class="divPopOver">
+      <div class="heightDiv"></div>
+      <div class="tiret">
+      </div>
+      <div (click)='click5()'>
+        <img [hidden]='!clicked5' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked5'>Par ordre alphabétique A-Z</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div (click)='click1()'>
+        <img [hidden]='!clicked1' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked1'>Le plus de résultat</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div (click)='click2()'>
+        <img [hidden]='!clicked2' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked2'>Le moins de résultat</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div (click)='click3()'>
+        <img [hidden]='!clicked3' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked3'>Du plus récent au plus ancien</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div (click)='click4()'>
+        <img [hidden]='!clicked4' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked4'>Du plus ancien au plus récent</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+    </div>
+    </ion-slide>
+    </ion-slides>
+  </div>
+  <div>
+    <ion-col>
+      <p class="textContact" >Liste d’amis</p>
+      <p class="textContact2">Ceux que vous sollicitez pour vos recherches.</p>
+    </ion-col>
+    <div>
+      <img src='/assets/img/fleche.png' (click)='openModalFiltre()' class="fleche"/>
+    </div>
+  </div>
+
+
+  <ion-row class="row1" *ngFor="let network of networks">
+    <ion-avatar class="imgInvit">
+      <img *ngIf="network.thumbnail_path" class="imgInvit2" [src]='network.thumbnail_path'  />
+      <img *ngIf="!network.thumbnail_path" class="imgInvit2" src='/assets/images/profile.png'  />
+   
+    </ion-avatar>
+    <ion-col>
+      <p class="textName">{{network.first_name}} {{network.last_name}}</p>
+      <p class="textJob">{{network.poste}}</p>
+      <ion-row>
+        <img src='/assets/images/cercle.svg' class="cercle"/>
+        <p class="textCercle"><span>{{network.hits}}</span>opportunitées</p>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <div *ngFor="let invitation of invitations">
+  <ion-row class="row1" *ngIf="invitation.receiver.first_name">
+    <ion-avatar class="imgInvit" [class.opacity]='true'>
+      <img *ngIf="invitation.receiver.thumbnail_path" class="imgInvit2" [src]='invitation.receiver.thumbnail_path' [class.opacity]='true' />
+      <img *ngIf="!invitation.receiver.thumbnail_path" class="imgInvit2" src='/assets/images/profile.png' [class.opacity]='true' />
+   
+    </ion-avatar>
+    <ion-col>
+      <p class="textName2">{{invitation.receiver.first_name}} {{invitation.receiver.last_name}}</p>
+      <p class="textJob2">{{invitation.receiver.poste}} </p>
+      <ion-row>
+        <img src='/assets/images/cercle.svg' class="cercle" [class.opacity]='true'/>
+        <p class="textCercle2"><span>58</span>opportunitées</p>
+      </ion-row>
+    </ion-col>
+    <button class="buttonWaiting">
+      <p class="textButtonWaiting">EN ATTENTE</p>
+    </button>
+  </ion-row>
+  <ion-row class="row1" *ngIf="invitation.sender.first_name">
+    <ion-avatar class="imgInvit" [class.opacity]='true'>
+      <img *ngIf="invitation.sender.thumbnail_path" class="imgInvit2" [src]='invitation.sender.thumbnail_path' [class.opacity]='true' />
+      <img *ngIf="!invitation.sender.thumbnail_path" class="imgInvit2" src='/assets/images/profile.png' [class.opacity]='true' />
+   
+    </ion-avatar>
+    <ion-col>
+      <p class="textName2">{{invitation.sender.first_name}} {{invitation.sender.last_name}}</p>
+      <p class="textJob2">{{invitation.sender.poste}} </p>
+      <ion-row>
+        <img src='/assets/images/cercle.svg' class="cercle" [class.opacity]='true'/>
+        <p class="textCercle2"><span>58</span>opportunitées</p>
+      </ion-row>
+    </ion-col>
+    <button class="buttonWaiting">
+      <p class="textButtonWaiting">EN ATTENTE</p>
+    </button>
+  </ion-row>
+</div>
+  <!-- <div class="divButtom">
+    
+      <p class="textActiveRech">Activer MA RECHERCHE</p>
+      <ion-toggle class="toggle"></ion-toggle>
+   <p class="textActiveRech2">Garde votre recherche visible par vos amis. <br>Vous pouvez l’activer/désactiver à tout moment.</p>
+  </div> -->
+</ion-content>

@@ -1,0 +1,100 @@
+<div (click)="closeModalFiltre()" *ngIf="showFiltre" class="filtre">
+  <ion-slides [options]="option1" (ionSlideDrag)="slideChanged($event)">
+    <ion-slide>
+      <div class="divPopOver">
+        <div class="heightDiv"></div>
+        <div class="tiret"></div>
+        <div class="initial" (click)="click5()">
+          <img [hidden]="!clicked5" src="/assets/img/tick.png" class="tick" />
+          <p class="text3PopOver" [class.text2PopOver]="clicked5">
+            Par ordre alphabétique A-Z
+          </p>
+        </div>
+        <div class="lineHorizontalPopOver"></div>
+        <div class="initial" (click)="click1()">
+          <img [hidden]="!clicked1" src="/assets/img/tick.png" class="tick" />
+          <p class="text3PopOver" [class.text2PopOver]="clicked1">
+            Le plus de résultat
+          </p>
+        </div>
+        <div class="lineHorizontalPopOver"></div>
+        <div class="initial" (click)="click2()">
+          <img [hidden]="!clicked2" src="/assets/img/tick.png" class="tick" />
+          <p class="text3PopOver" [class.text2PopOver]="clicked2">
+            Le moins de résultat
+          </p>
+        </div>
+        <div class="lineHorizontalPopOver"></div>
+        <div class="initial" (click)="click3()">
+          <img [hidden]="!clicked3" src="/assets/img/tick.png" class="tick" />
+          <p class="text3PopOver" [class.text2PopOver]="clicked3">
+            Du plus récent au plus ancien
+          </p>
+        </div>
+        <div class="lineHorizontalPopOver"></div>
+        <div class="initial" (click)="click4()">
+          <img [hidden]="!clicked4" src="/assets/img/tick.png" class="tick" />
+          <p class="text3PopOver" [class.text2PopOver]="clicked4">
+            Du plus ancien au plus récent
+          </p>
+        </div>
+        <div class="lineHorizontalPopOver"></div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</div>
+<div>
+  <ion-col>
+    <p class="textContact">{{ "invitation_component_title" | translate }}</p>
+    <p class="textContact2">
+      {{ "invitation_component_subtitle" | translate }}
+    </p>
+  </ion-col>
+  <div>
+    <img
+      src="/assets/img/fleche.png"
+      (click)="openModalFiltre()"
+      class="fleche"
+    />
+  </div>
+</div>
+
+<div *ngFor="let invitation of invitations">
+  <ion-row class="rowInvit">
+    <ion-avatar class="imgInvit">
+      <img src="{{ invitation.sender.thumbnail_path }}" />
+    </ion-avatar>
+    <ion-col>
+      <p class="textName">
+        {{
+          trimString(
+            invitation.sender.first_name + " " + invitation.sender.last_name,
+            25
+          )
+        }}
+      </p>
+      <p class="textJob">{{ trimString(invitation.sender.poste, 65) }}</p>
+      <ion-row>
+        <img src="/assets/img/smallSearch.png" class="imgSearch" />
+        <p class="textSearch">
+          {{ "num_searches_label" | translate: { value: 4 } }}
+        </p>
+      </ion-row>
+      <ion-row>
+        <button
+          class="buttonAccept"
+          (click)="updateInvitation(invitation, 'A')"
+        >
+          <p class="textButtonAccept">{{ "accept_button" | translate }}</p>
+        </button>
+        <ion-button
+          fill="outline"
+          class="buttonDecline"
+          (click)="updateInvitation(invitation, 'D')"
+        >
+          <p class="textButtonDecline">{{ "decline_button" | translate }}</p>
+        </ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</div>

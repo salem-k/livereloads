@@ -1,0 +1,47 @@
+<ion-header  class="header">
+  <ion-grid>
+    <ion-row class="rowHeader">
+      <img src='/assets/images/iconGoBack.png' class='iconGoBack' (click)='goBack()'/>
+      <p class="title">Secteur</p>
+    </ion-row>
+  </ion-grid>
+  <div class="borderheader">
+  </div>
+</ion-header>
+<ion-content >
+  
+  <ng-template #withFlags let-attrs="attrs" >
+    <ion-item class="row1"  text-wrap (click)="selectItem(attrs.data)">
+        <p [innerHTML]="attrs.data | boldprefix:attrs.keyword" ></p>
+    </ion-item>
+  </ng-template>
+
+ <div class="ion-form-group">
+   <ion-auto-complete  (focusin)='onFocus()' 
+   (focusout)="onBlur()"  [options]="{ placeholder : 'Chercher' }"  [template]="withFlags" [dataProvider]="autoCompleteSectors" [labelPosition]="'floating'"></ion-auto-complete>
+  <div *ngIf='listResult.length !== 0 && !ionAutoCompleteFocused' class="divSearch">
+    <div class="divGeo" *ngFor='let val of listResult '>
+      <div  class="divZoneGeo" >
+        <p class="textZoneGeo">{{val}}</p> <img class="smallIconClose" src="/assets/img/smallIconClose.png" (click)='removeElement(val)'/>
+      </div>
+    </div>
+  </div>
+ </div>
+ <p *ngIf='!ionAutoCompleteFocused' class="text1">Dernières recherches</p>
+ <ion-grid *ngIf='!ionAutoCompleteFocused'>
+   <ion-row class="row1" *ngFor="let item of lastSectorSearch">
+     <ion-col>
+       <p class="text2" (click)="checkListCheck(item)">{{item}}</p>
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+ 
+ 
+</ion-content>
+<ion-footer class="footer">
+  <div *ngIf='!ionAutoCompleteFocused' class="divButton">
+    <button class="button" (click)='getParamAndGoBack()'>
+      <p class="textButton">SUIVANT</p>
+    </button>
+</div>
+</ion-footer>

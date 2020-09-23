@@ -1,0 +1,210 @@
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+.center {
+    text-align: center;
+  }
+.rowTitle {
+    margin-left: 65%;
+}
+.text1 {
+    outline: none;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.625em;
+    line-height: 12px;
+    letter-spacing: 0.52px;
+
+    color: #212121;
+}
+.ios .text1 {
+    font-size: 10px;
+}
+.icon {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    transform: rotate(270deg);
+    width: 9px;
+    height: 16px;
+    margin-top: 10px;
+}
+.card {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    width: 330px;
+    height: 472px;
+    background: #ffffff;
+    box-shadow: none !important;
+    border-radius: 50px;
+}
+.img {
+    width: 215px;
+    height: 216px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 107.5px;
+}
+.text2 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.875em;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+.ios .text2 {
+    font-size: 30px;
+}
+.text3 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    margin-top: 45px;
+}
+.ios .text3 {
+    font-size: 14px;
+}
+.text4 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+.ios .text4 {
+    font-size: 14px;
+}
+.row {
+    width: 260px;
+    height: 69px;
+    margin-left: 30%;
+    margin-top: 15px;
+}
+.img2 {
+    width: 80.39px;
+    height: 80.39px;
+    margin-right: 35.61px;
+}
+.img3 {
+    width: 85px;
+    height: 85px;
+    margin-top: -6px;
+}
+
+@media (min-device-height: 700px) {
+    .card {
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 7%;
+        width: 330px;
+        height: 472px;
+        background: #ffffff;
+        box-shadow: none !important;
+        border-radius: 50px;
+    }
+}
+
+@media (min-device-height: 812px) {
+    .rowTitle {
+        margin-left: 63%;
+    }
+    .card {
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 10%;
+        width: 330px;
+        height: 500px;
+        background: #ffffff;
+        box-shadow: none !important;
+        border-radius: 50px;
+    }
+    .img2 {
+        width: 80.39px;
+        height: 80.39px;
+        // margin-right: 51.61px;
+    }
+    // .ios .img2 {
+    //     margin-right: 41.61px;
+    // }
+    .img3 {
+        width: 85px;
+        height: 85px;
+    }
+    .text1 {
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.8125em;
+        line-height: 12px;
+        letter-spacing: 0.52px;
+        color: #212121;
+    }
+    .ios .text1 {
+        font-size: 13px;
+    }
+    .icon {
+        background: rgba(0, 0, 0, 0.0001);
+        box-sizing: border-box;
+        transform: rotate(270deg);
+        width: 9px;
+        height: 16px;
+        margin-top: 13px;
+    }
+  
+}
+@media (max-device-height: 667px) {
+  .card {
+    margin-top: 4%;
+    margin-bottom: 7%;
+  }  
+}
+
+@media (max-device-height: 640px) {
+    .card {
+        margin-top: 4%;
+        margin-bottom: 7%;
+      }  
+}
+
+@media (max-device-height: 568px) {
+    .text3 {
+        margin-top: 30px;
+    }
+    .rowTitle {
+        margin-left: 63%;
+    }
+    .card {
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        width: 270px;
+        height: 380px;
+        background: #ffffff;
+        box-shadow: none !important;
+        border-radius: 50px;
+    }
+    .img {
+        width: 200px;
+        height: 201px;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 100px;
+    }
+    .row {
+        width: 260px;
+        height: 69px;
+        margin-left: 25%;
+        margin-top: 15px;
+    }
+}

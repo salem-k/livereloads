@@ -1,0 +1,149 @@
+ion-content {
+  --ion-background-color: #f9f9f9;
+}
+.logo {
+  width: 139px;
+  height: 116px;
+  margin: auto;
+  margin-top: 25%;
+}
+.text1 {
+  width: 289px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+  margin: auto;
+  margin-top: 60px;
+}
+.text2 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.buttonConnect {
+  width: 289px;
+  height: 36px;
+  // background: #ffffff;
+  // border: 1px solid #39639d;
+  box-sizing: border-box;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -145px;
+  bottom: 30px;
+  padding: 0px;
+  outline: none;
+  --border-radius: 30px;
+  --background: #ffffff;
+  --background-activated: #ffffff;
+  --background-focused: #ffffff;
+  --background-hover: #ffffff;
+  --border-style: solid;
+  --border-color: #39639d;
+  --border-width: 1px;
+  --box-shadow: none;
+}
+.textButton2 {
+  margin: auto;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #39639d;
+  text-transform: uppercase
+}
+.buttonSignUp {
+  width: 289px;
+  height: 36px;
+  background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  border-radius: 30px;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -145px;
+  bottom: 85px;
+  padding: 0px;
+}
+.textButton1 {
+  margin: auto;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #ffffff;
+  text-transform: uppercase
+}
+.ios .textButton1 {
+  font-size: 14px;
+}
+.ios .textButton2 {
+  font-size: 14px;
+}
+@media (min-device-height: 700px) {
+  .buttonConnect {
+    bottom: 67px;
+  }
+  .buttonSignUp {
+    bottom: 127px;
+  }
+  .logo {
+    margin-top: 30%;
+  }
+}
+@media (min-device-height: 812px) {
+  .buttonConnect {
+    bottom: 67px;
+  }
+  .buttonSignUp {
+    bottom: 127px;
+  }
+  .ios .buttonConnect {
+    bottom: 110px;
+  }
+  .ios .buttonSignUp {
+    bottom: 170px;
+  }
+  .logo {
+    margin-top: 40%;
+  }
+}
+@media (max-device-height: 667px) {
+  .buttonConnect {
+    bottom: 40px;
+  }
+  .buttonSignUp {
+    bottom: 95px;
+  }
+}
+@media (min-resolution: 500dpi) {
+  .text1 {
+    font-size: 18px;
+  }
+  .text2 {
+    font-size: 18px;
+  }
+}

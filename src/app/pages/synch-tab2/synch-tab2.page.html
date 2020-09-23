@@ -1,0 +1,281 @@
+
+<ion-header class="header">
+  <p class="textHeader">Mise en relation</p>
+  <div class="scrollmenu" #tabsContentRef (scroll)='onScroll($event)'>
+    <div class="content">
+      <ion-grid class="gridScroll"  *ngFor='let item of listResult ; let i = index'> 
+        <ion-col [class.opacity]='item.opacity' [id]='item.textCard' >
+          <img [src]='item.imgCard' class='item' (click)='scrollTo(item,i)'/>
+            <ion-row class='row1' [class.negatifNbrRow1]='item.numberIntro < 0' [class.row1Blue]='item.numberIntro === 0' [class.positifNbrRow1]='item.numberIntro > 0'>
+              <div class="divRow1">
+                <img src='/assets/img/smallLogo2.png' class='cercle'/>
+                <p class="textNumber">{{item.numberIntro}}</p>
+              </div>
+          </ion-row>
+         
+          <ion-row class="rowTextName">
+            <ion-col class="colTextName">
+              <p class="textName">{{item.textCard}}</p>
+            </ion-col>
+          </ion-row>
+  
+        </ion-col>
+      </ion-grid>
+    </div>
+  </div>
+</ion-header>
+<ion-content [scrollEvents]="true" (ionScroll)="logScrolling($event)" >
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" class="refresh">
+    <ion-refresher-content class="refresher"
+      pullingIcon="none"
+      refreshingSpinner="crescent">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div *ngFor='let item of listResult'>
+    <div [id]='item.id'>
+      <ion-grid class="rowSearch">
+        <ion-row >
+          <ion-col class="borderImg">
+           <img [src]='item.imgCard' class="imgItemList"/>
+          </ion-col>
+          <ion-col>
+            <p class="text1List">{{item.textNameCard}}</p>
+            <p class="text2List">{{item.textJobCard}}</p>
+            <ion-row>
+              <img src="/assets/img/smallLogo2.png" class="imgLogo"/>
+              <p class="text3List">{{item.numberIntro}}</p>
+              <p class="text4List">Vous lui devez des introductions</p>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-card class="card1">
+        <p class="text1Card">Recherche (1/3)</p>
+        <p class="text2Card">Directeur marketing en beauté</p>
+        <div>
+         <p class="text3Card">Dans le cadre de la restauration de son salon de coiffure il cherche un Directeur 
+         
+         </p>
+         <!-- <span>Plus de détails</span>  -->
+        </div>
+       
+        <ion-slides #mySlider >
+          <ion-slide class="slide">
+           <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil2.png) no-repeat center; background-size: cover;">
+             <div class="height"></div>
+              <p class="text4Card">Edouard Philippe</p>
+             <p class="text5Card">Directeur marketing luxe</p>
+             <p class="text6Card">Softygone</p>
+             
+             <div class="lineHorizontalCard"></div>
+             </div>
+          </ion-slide>
+          <ion-slide class="slide">
+           <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil2.png) no-repeat center; background-size: cover;">
+             <div class="height"></div>
+              <p class="text4Card">Edouard Philippe</p>
+             <p class="text5Card">Directeur marketing luxe</p>
+             <p class="text6Card">Softygone</p>
+             
+             <div class="lineHorizontalCard"></div>
+             </div>
+          </ion-slide>
+        </ion-slides>
+        <ion-row class="row2Card">
+         <ion-col class="col">
+           <ion-row class="rowCard">
+            <img src="/assets/img/user.png" class="user"/>
+            <p class="textNumber2">{{number}}</p>
+           </ion-row>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button1Card" (click)='openModalPopUpMessageInvit()'>
+             <img src="/assets/img/superLike.png" class="imgButton1"/>
+             <p class="textButton1">Introduire</p>
+           </button>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button2Card" (click)='swipeNext()'>
+             <p class="textButton2">Décliner</p>
+             <img class="imgButton2" src="/assets/img/supButton.png"/>
+             <img/>
+           </button>
+         </ion-col>
+       </ion-row>
+      </ion-card>
+     
+     
+      <ion-card class="card1">
+       <p class="text1Card">Recherche (2/3)</p>
+       <p class="text2Card">Directeur marketing en beauté</p>
+       <p class="text3Card">Dans le cadre de la restauration de son salon de coiffure il cherche un Directeur </p>
+       <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil2.png) no-repeat center; background-size: cover;">
+       <div class="height"></div>
+        <p class="text4Card">Edouard Philippe</p>
+       <p class="text5Card">Directeur marketing luxe</p>
+       <p class="text6Card">Softygone</p>
+       
+       <div class="lineHorizontalCard"></div>
+       </div>
+       
+       <ion-row class="row2Card">
+         <ion-col class="col">
+           <ion-row class="rowCard">
+            <img src="/assets/img/user.png" class="user"/>
+            <p class="textNumber2">34</p>
+           </ion-row>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button1Card">
+             <img src="/assets/img/superLike.png" class="imgButton1"/>
+             <p class="textButton1">Introduire</p>
+           </button>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button2Card">
+             <p class="textButton2">Décliner</p>
+             <img class="imgButton2" src="/assets/img/supButton.png"/>
+             <img/>
+           </button>
+         </ion-col>
+       </ion-row>
+     </ion-card>
+     
+     <ion-card class="card1">
+       <p class="text1Card">Recherche (3/3)</p>
+       <p class="text2Card">Directeur marketing en beauté</p>
+       <p class="text3Card">Dans le cadre de la restauration de son salon de coiffure il cherche un Directeur </p>
+       <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil3.png) no-repeat center; background-size: cover;">
+       <div class="height"></div>
+        <p class="text4Card">Edouard Philippe</p>
+       <p class="text5Card">Directeur marketing luxe</p>
+       <p class="text6Card">Softygone</p>
+       
+       <div class="lineHorizontalCard"></div>
+       </div>
+       
+       <ion-row class="row2Card">
+         <ion-col class="col">
+           <ion-row class="rowCard">
+            <img src="/assets/img/user.png" class="user"/>
+            <p class="textNumber2">34</p>
+           </ion-row>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button1Card">
+             <img src="/assets/img/superLike.png" class="imgButton1"/>
+             <p class="textButton1">Introduire</p>
+           </button>
+         </ion-col>
+         <ion-col class="col">
+           <button class="button2Card">
+             <p class="textButton2">Décliner</p>
+             <img class="imgButton2" src="/assets/img/supButton.png"/>
+             <img/>
+           </button>
+         </ion-col>
+       </ion-row>
+     </ion-card>
+     
+     
+    </div>
+  </div>
+
+
+<!-- <div>
+  <ion-grid class="rowSearch">
+    <ion-row>
+      <ion-col class="borderImg">
+       <img src="/assets/img/imgProfil3.png" class="imgItemList"/>
+      </ion-col>
+      <ion-col>
+        <p class="text1List">Sophie Gazet Antoine</p>
+        <p class="text2List">Président fondateur  ·  Zagett</p>
+        <ion-row>
+          <img src="/assets/img/smallLogo2.png" class="imgLogo"/>
+          <p class="text3List">-2</p>
+          <p class="text4List">Vous lui devez des introductions</p>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="card1">
+    <p class="text1Card">Recherche (1/2)</p>
+    <p class="text2Card">Assistant-e maternel-le spécialisé dans la communication non verbale</p>
+    <p class="text3Card">Dans le cadre de la restructuration de mon entreprise en pleine expension, je  </p>
+    <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil3.png) no-repeat center; background-size: cover;">
+      <div class="height"></div>
+       <p class="text4Card">Edouard Philippe</p>
+      <p class="text5Card">Directeur marketing luxe</p>
+      <p class="text6Card">Softygone</p>
+      
+      <div class="lineHorizontalCard"></div>
+      </div>
+      <ion-row class="row2Card">
+        <ion-col class="col">
+          <ion-row class="rowCard">
+           <img src="/assets/img/user.png" class="user"/>
+           <p class="textNumber2">34</p>
+          </ion-row>
+        </ion-col>
+        <ion-col class="col">
+          <button class="button1Card">
+            <img src="/assets/img/superLike.png" class="imgButton1"/>
+            <p class="textButton1">Introduire</p>
+          </button>
+        </ion-col>
+        <ion-col class="col">
+          <button class="button2Card">
+            <p class="textButton2">Décliner</p>
+            <img class="imgButton2" src="/assets/img/supButton.png"/>
+            <img/>
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+  
+  
+  
+  
+  <ion-card class="card1">
+   <p class="text1Card">Recherche (2/2)</p>
+   <p class="text2Card">Directeur marketing en beauté</p>
+   <p class="text3Card">Dans le cadre de la restauration de son salon de coiffure il cherche un Directeur </p>
+   <div class="divImg" style="background: linear-gradient( transparent 0%, #000000 100%), url(../../../assets/img/picProfil3.png) no-repeat center; background-size: cover;">
+   <div class="height"></div>
+    <p class="text4Card">Edouard Philippe</p>
+   <p class="text5Card">Directeur marketing luxe</p>
+   <p class="text6Card">Softygone</p>
+   
+   <div class="lineHorizontalCard"></div>
+   </div>
+   
+   <ion-row class="row2Card">
+     <ion-col class="col">
+       <ion-row class="rowCard">
+        <img src="/assets/img/user.png" class="user"/>
+        <p class="textNumber2">34</p>
+       </ion-row>
+     </ion-col>
+     <ion-col class="col">
+       <button class="button1Card">
+         <img src="/assets/img/superLike.png" class="imgButton1"/>
+         <p class="textButton1">Introduire</p>
+       </button>
+     </ion-col>
+     <ion-col class="col">
+       <button class="button2Card">
+         <p class="textButton2">Décliner</p>
+         <img class="imgButton2" src="/assets/img/supButton.png"/>
+         <img/>
+       </button>
+     </ion-col>
+   </ion-row>
+  </ion-card>
+  
+  
+</div> -->
+
+
+ 
+</ion-content>

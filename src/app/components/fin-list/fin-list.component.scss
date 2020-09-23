@@ -1,0 +1,103 @@
+.user {
+    width: 104px;
+    height: 104px;
+    margin: auto;
+    margin-top: 25%;
+}
+.center {
+    text-align: center;
+  }
+  
+.textSynch {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5625em;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: 10%;
+}
+.ios .textSynch {
+    font-size: 25px;
+}
+.center {
+    text-align: center;
+}
+.button {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    margin-top: 25%;
+    outline: none;
+}
+.textButton {
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.ios .textButton {
+    font-size: 14px;
+}
+.text2 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+}
+@media (min-device-height: 700px) {
+    .user {
+        margin-top: 30%;
+    }
+    .button {
+        margin-top: 30%;
+    }
+}
+@media (min-device-height: 812px) {
+    .user {
+        width: 104px;
+        height: 104px;
+        margin: auto;
+        margin-top: 40%;
+    }
+    .button {
+        width: 289px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+        margin-top: 40%;
+    }
+}
+@media (min-device-height: 836px) {
+    .user {
+        margin-top: 45%;
+    }
+  }
+@media (max-device-height: 568px) {
+    .user {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        margin-top: 15%;
+    }
+    .button {
+        width: 269px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+        margin-top: 30%;
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "521906226089",
+    "firebase_url": "https://sales-friends.firebaseio.com",
+    "project_id": "sales-friends",
+    "storage_bucket": "sales-friends.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521906226089:android:f3614b71e0f9a175b5fab8",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521906226089-vnirpd7ddm8dpbquteu93e5c0idh5hjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuqIBkhHw1oagNk6caBTXL0x-EhZkstqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521906226089-vnirpd7ddm8dpbquteu93e5c0idh5hjp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521906226089-cuj96du6dlgjp2vra8gg28d0dor5afqm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.ionic.starter",
+                "app_store_id": "1518019158"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

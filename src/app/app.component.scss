@@ -1,0 +1,26 @@
+
+.splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: white;
+}
+.logo {
+    width: 109px;
+    height: 90px;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ion-spinner {
+    color: #39639D;
+    width: 39.03px !important;
+    height: 40px !important;
+    position: absolute;
+    top: 60%;
+    width: 100% !important;
+}

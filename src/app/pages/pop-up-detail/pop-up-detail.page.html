@@ -1,0 +1,76 @@
+<ion-content scroll-y="false">
+        <p class="title">{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+        <img src='/assets/images/iconClose.png' class="icon" (click)='closeModal()'/>
+    
+  <ion-grid>
+    <ion-row class="row1">
+      <ion-col size='5'>
+        <img src='/assets/images/profil4.png' class="profil"/>
+      </ion-col>
+      <ion-col size='7'>
+        <p class="name">Sophie Gazet Antoine</p>
+        <p class="text">Zagett</p>
+        <p class="text2">Directrice Générale</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row3">
+      <ion-col>
+        <p class="text4">{{ 'list_sollicitation_contact_search_label' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text5"> Chef de projet digital.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row4">
+      <ion-col>
+        <p class="textMotif">{{ 'motif_page_subject_label' | translate</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text6">Zagett est extrêment pertinent sur le devellopement de contenu et a notamment fondé la
+          content factory de Sephora. Il aimerait te rencontrer et te présenter des cas qui pourrait vraiment
+          t’interesser. </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+        <p class="text7">{{ 'popup_detail_page_do_relationship' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowTextRelation">
+      <ion-col >
+        <p class="text8" [innerHTML]="'popup_detail_due_relationships' | translate:{name:'Sophie', value: 3}"></p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowRelation">
+      <ion-col size='3'>
+        <img src='/assets/images/profil4.png' class="img1"/>
+        <p class="text10">Sophie</p>
+      </ion-col>
+      <ion-col size='1'>
+        <p class="text11">4</p>
+      </ion-col>
+     <ion-col size='4'>
+      <img src='/assets/images/disk.png' class="img2"/>
+     </ion-col>
+      <ion-col size='1'>
+        <p class="text12">7</p>
+      </ion-col>
+      <ion-col size='3'>
+        <img src='/assets/images/user.png' class="img1"/>
+        <p class="text10">Olivier</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row">
+        <img src='/assets/images/cercle.svg' class='cercle'/>
+        <p class="text13" [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+    </ion-row>
+    <div class="center">
+      <button class='button'>
+        <p class='textButton'>{{ 'start_button' | translate }}</p>
+      </button></div>
+  </ion-grid>
+</ion-content>

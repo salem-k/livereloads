@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  URL: "https://sales-friends.ew.r.appspot.com/",
+  linkedinClientId: "7872yuinnu0fqz",
+  linkedinClientSecret: "SMHJHzXkXYIgP8m4"
 };
 
 /*

@@ -1,0 +1,61 @@
+<ion-header  class="header">
+  <ion-grid>
+    <ion-row class="rowHeader">
+      <img src='/assets/images/iconGoBack.png' class='iconGoBack' (click)='goBack()'/>
+      <p class="title">Zone géographique</p>
+    </ion-row>
+  </ion-grid>
+  <div class="borderheader">
+  </div>
+</ion-header>
+<ion-content >
+  
+  <ng-template #withFlags let-attrs="attrs">
+    <ion-item class="row1"  text-wrap (click)="selectItem(attrs.data)">
+        <p [innerHTML]="attrs.data | boldprefix:attrs.keyword" ></p>
+      <!--<ion-checkbox class="checkBox" (click)="selectItem(attrs.data)"></ion-checkbox>-->
+    </ion-item>
+  </ng-template>
+
+  <div class="ion-form-group">
+    <ion-auto-complete (focusin)='onFocus()' 
+    (focusout)="onBlur()" [options]="{ placeholder : 'Chercher' }" [template]="withFlags" [dataProvider]="autoCompleteRegions" [labelPosition]="'floating'"></ion-auto-complete>
+    <div *ngIf='listResult.length !== 0 && !ionAutoCompleteFocused' class="divSearch">
+      <div class="divGeo" *ngFor='let val of listResult'>
+        <div class="divZoneGeo" >
+          <p class="textZoneGeo">{{val}}</p> <img class="smallIconClose" src="/assets/img/smallIconClose.png" (click)='removeElement(val)'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <ion-input class="input" >
+    <img src='/assets/img/zoneGeo.png' class="imgInput"/>
+    <div class="divInput"></div>
+    <p class="textInput">Définir une zone géographique</p>
+  </ion-input> -->
+  <!--
+     *ngIf='!ionAutoCompleteFocused'
+  -->
+  <p *ngIf='!ionAutoCompleteFocused' class="text1">Dernières recherches</p>
+  <ion-grid *ngIf='!ionAutoCompleteFocused'>
+    <ion-row class="row1" *ngFor="let item of lastGeoSearch">
+      <ion-col>
+        <p (click)="checkListCheck(item)" class="text2">{{item}}</p>
+      </ion-col>
+      <!-- <ion-checkbox *ngIf="currentSearch && currentSearch.geos && (currentSearch.geos.indexOf(item) != -1)" checked="true"  (click)="checkListCheck(item)"></ion-checkbox>
+      <ion-checkbox *ngIf="!currentSearch || !currentSearch.geos || (currentSearch.geos.indexOf(item) == -1)" checked="false"  (click)="checkListCheck(item)"></ion-checkbox> -->
+    </ion-row>
+
+  </ion-grid>
+ 
+ 
+</ion-content>
+<ion-footer class="footer">
+  <div *ngIf='!ionAutoCompleteFocused' class="divButton">
+    <button class="button" (click)='getParamAndGoBack()'>
+      <p class="textButton">SUIVANT</p>
+    </button>
+</div>
+</ion-footer>

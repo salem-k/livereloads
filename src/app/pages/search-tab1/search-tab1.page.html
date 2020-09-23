@@ -1,0 +1,274 @@
+<!-- <ion-content [fullscreen]="true">
+  <div class="emptyDiv"></div>
+    <ion-img src='/assets/images/SearchIcon.png' class='iconSearchWhite'></ion-img>
+  <p class="text1">Bientôt disponible</p>
+  <p class="text2">La recherche sera bientôt <br>disponible dans SalesFriends</p>
+  <div class="center">
+    <button class='button'>
+      <p class='textButton'>retour</p>
+    </button></div>
+
+
+</ion-content> -->
+<ion-header class="headerRech" >
+  <div [class.bgFiltre2]='showFiltre2' >
+
+  </div>
+  <ion-grid [class.bgSearch]='showFiltre || selectedSearchId'>
+    <p class="title">{{ 'search_tab1_title' | translate }}</p>
+    <ion-row class="rowHeader">
+      <ion-col (click)='goOpportunity()'>
+        <div class="center">
+          <img src='/assets/img/icon2cercle.png' class="iconCercle"/>
+        </div>
+        <p class="text1Col1" >{{total_hits}}</p>
+        <p class="text2Col1" [innerHTML]="'search_tab1_num_opportunities_from_my_friends_list' | translate"></p>
+      </ion-col>
+      <div class="verticalLine"></div>
+      <ion-col (click)='goGeneralIntroRealises()'>
+        <div class="center">
+        <img src='/assets/img/smallLogo.png' class="iconLogo"/>
+        </div>
+        <p class="text1Col1">{{total_realised_intro}}</p>
+        <p class="text2Col1" [innerHTML]="'search_tab1_num_introductions_made' | translate"></p>
+      </ion-col>
+      <div class="verticalLine"></div>
+      <ion-col (click)='goPotentielReseau()'>
+        <div class="center">
+        <img src='/assets/img/exclude.png' class="iconExclude"/>
+        </div>
+      
+        <p class="text1Col1" *ngIf="total_potential_search < 10000">{{total_potential_search}}</p>
+        <p class="text1Col1" *ngIf="total_potential_search > 10000">{{calculateHints(total_potential_search)}}</p>
+        <p class="text2Col1" [innerHTML]="'search_tab1_num_network_potential' | translate"></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content>
+  <div (click)='closeModalGeneralFiltre()' *ngIf='showFiltre' class="filtre">
+    <ion-slides [options]="option1" (ionSlideDrag)="slideChanged($event)">
+      <ion-slide >
+    <div class="divPopOver">
+      <div class="heightDiv"></div>
+      <div class="tiret">
+      </div>
+      <div class="initial" (click)='sortAlphabetical()'>
+        <img [hidden]='!clicked5' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked5'>Par ordre alphabétique A-Z</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div class="initial" (click)='click1()'>
+        <img [hidden]='!clicked1' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked1'>Le plus de résultat</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div class="initial" (click)='click2()'>
+        <img [hidden]='!clicked2' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='clicked2'>Le moins de résultat</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div class="initial" (click)='sortDate(-1)'>
+        <img [hidden]='clicked3' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='!clicked3'>Du plus récent au plus ancien</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div class="initial" (click)='sortDate(1)'>
+        <img [hidden]='clicked4' src='/assets/img/tick.png' class="tick" />
+        <p class="text3PopOver" [class.text2PopOver]='!clicked4'>Du plus ancien au plus récent</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+    </div>
+    </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div (click)='closeModalFiltre()' *ngIf='selectedSearchId' class="filtre2">
+    <ion-slides [options]="option1" (ionSlideDrag)="slideChanged($event)">
+      <ion-slide >
+    <div class="divPopOver">
+      <div class="heightDiv"></div>
+      <div class="tiret">
+      </div>
+      <div class="initial" (click)='motif()'>
+        <p class="text3PopOver" >Voir le motif </p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <!--
+         (click)='goPageEditSearch(selectedSearchId)'
+      -->
+      <div class="initial" [routerLink]="'/edit-search/'+selectedSearchId">
+        <!-- <img [hidden]='!clickedd2' src='/assets/img/tick.png' class="tick" /> -->
+        <p class="text3PopOver" >Editer la recherche</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+      <div class="initial" (click)='desactivateSearch(selectedSearchId)'>
+        <p class="text3PopOver" *ngIf="status(selectedSearchId)" [class.text2PopOver]='clickedd3'>Suspendre la recherche</p>
+        <p class="text3PopOver" *ngIf="!status(selectedSearchId)" [class.text2PopOver]='clickedd3'>Réactiver la recherche</p>
+      </div>
+      <div class="lineHorizontalPopOver"></div>
+    </div>
+    </ion-slide>
+    </ion-slides>
+  </div>
+  <ion-row class="contentRow1">
+    <ion-col>
+      <ion-row>
+        <p class="textActive" (click)='goActivePage()'>{{ 'search_tab1_label_active' | translate }} ({{lengthActives }})</p>
+        <p class="textInActive" (click)='goInactivePage()'>{{ 'search_tab1_label_inactive' | translate }}  ({{lengthInActives}})</p>
+      </ion-row>
+      <div class="underLine" [class.underline2]='!active'></div>
+    </ion-col>
+    <img (click)='openModalGeneralFiltre()' src='/assets/img/fleche2Gray.png' class="fleche"/>
+  </ion-row>
+  <div *ngIf='active' class="opacityList">
+    <div  *ngFor="let search of sharedData.getSearchs()">
+      <ion-card class="card1"  *ngIf="search.activate">
+        <div class="editDiv" (click)='openModalFiltre(search.id)'>
+          <img src="assets/img/edit.png" class="edit" />
+        </div>
+        <div>
+          <p (click)='clickCard(search.id)' class="text1Card">
+            {{search.title}} 
+          </p>
+          <div class="listDivZoneGeo">
+            <div [class.list]='!search.showDetail'>
+              <div *ngIf='concatList(search.location,search.poste).length !== 0 ' class="divZoneGeo1">
+                <div (click)='clickCard(search.id)' *ngIf="!search.showDetail">
+                  <div  class="divGeo"  *ngFor="let location of concatList(search.location,search.poste)| slice:0:3; let i=index">
+                    <!-- | slice:0:1; let i=index -->
+                    <div class="divZoneGeo" *ngIf="i != 2 && location!=''">
+                      <p class="textZoneGeo" >{{location}}</p>
+                    </div>
+                    <div class="divZoneGeo" *ngIf="i == 2 && calculateRest(concatList(search.location,search.poste)) != ''">
+                        <p class="textZoneGeo" >{{calculateRest(concatList(search.location,search.poste))}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div (click)='clickCard(search.id)' *ngIf="search.showDetail">
+                  <div  class="divGeo"  *ngFor="let location of concatList(search.location,search.poste); let i=index">
+                    <div class="divZoneGeo" *ngIf="location != ''">
+                      <p class="textZoneGeo" >{{location}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div (click)='clickCard(search.id)' *ngIf='search.showDetail'>
+          <p class="textMotif">Motif</p>
+          <p class="textMotif2">
+            {{search.motif}}
+          </p>
+        </div>
+        <ion-row>
+          <ion-col>
+            <p (click)='clickCard(search.id)' class="textMiseAjour" >{{dateSearch(search.created_at)}}</p>
+          </ion-col>
+        </ion-row>
+        <div class="horizontalLine"></div>
+      <ion-row style="vertical-align: middle;">
+          <ion-col (click)='goOpportunity(search.id,search.hits)' style="text-align: center">
+            <img src='/assets/img/cercle2.png' class="cercle2" />
+            <span class="textNumber" *ngIf="search.hits">{{search.hits}}</span>
+            <span class="textNumber" *ngIf="!search.hits">0</span>
+          </ion-col>
+          <ion-col (click)='goIntroRealises(search.id,search.realised_intro)' style="text-align: center">
+            <div class="verticalDiv"></div>
+            <img src='/assets/img/smallLogo2.png' class="smallLogo" />
+            <span class="textNumber">{{search.realised_intro}}</span>
+          </ion-col>
+          <ion-col (click)='goPotentielReseau(search.id)' style="text-align: center">
+            <div class="verticalDiv"></div>
+            <img src='/assets/img/exclude2.png' class="exclude" />
+            <span class="textNumber" *ngIf="search.potential_search >= 10000">{{calculateHints(search.potential_search)}}</span>
+            <span class="textNumber" *ngIf="search.potential_search > 1000 && search.potential_search < 10000">{{search.potential_search}}</span>
+            <span class="textNumber" *ngIf="search.potential_search <= 1000">{{search.potential_search}}</span>
+          </ion-col>
+      </ion-row>
+      </ion-card>
+    </div>
+  </div>
+
+  <div class="bottom" *ngIf='!active'>
+    <div  *ngFor="let search of sharedData.getSearchs()">
+      <ion-card class="card1"   *ngIf="!search.activate">
+        <div class="editDiv" (click)='openModalFiltre(search.id)'>
+          <img src="assets/img/edit.png" class="edit"/>
+        </div>
+        <div>
+          <p (click)='clickCard(search.id)' [class.opacity]='true' class="text1Card">
+            {{search.title}}
+          </p>
+          <div *ngIf='concatList(search.location,search.poste).length !== 0 ' class="divZoneGeo1">
+              <div  (click)='clickCard(search.id)' *ngIf="!search.showDetail">
+                <div  class="divGeo"  *ngFor="let location of concatList(search.location,search.poste)| slice:0:3; let i=index">
+                  <!-- | slice:0:1; let i=index -->
+                  <div class="divZoneGeo" *ngIf="i != 2 && location!=''">
+                    <p class="textZoneGeo" >{{location}}</p>
+                  </div>
+                  <div class="divZoneGeo" *ngIf="i == 2 && calculateRest(concatList(search.location,search.poste)) != ''">
+                      <p class="textZoneGeo" >{{calculateRest(concatList(search.location,search.poste))}}</p>
+                  </div>
+                </div>
+              </div>
+              <div  (click)='clickCard(search.id)' *ngIf="search.showDetail">
+                <div  class="divGeo"  *ngFor="let location of concatList(search.location,search.poste); let i=index">
+                  <div class="divZoneGeo" *ngIf="location != ''">
+                    <p class="textZoneGeo" >{{location}}</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- <div *ngIf='search.poste.length !== 0 && !search.showDetail' class="divZoneGeo1" >
+            <div class="divGeo"  *ngFor="let poste of search.poste">
+              <div [class.opacity]='true' class="divZoneGeo">
+                <p class="textZoneGeo">{{poste}}</p>
+              </div>
+            </div>
+          </div> -->
+          <div (click)='clickCard(search.id)' *ngIf='search.showDetail' [class.opacity]='true'>
+            <p [class.opacity]='true' class="textMotif">Motif</p>
+            <p class="textMotif2" [class.opacity]='true'>
+              {{search.motif}}
+            </p>
+          </div>
+        
+        </div>
+        <ion-row>
+          <ion-col>
+              <p (click)='clickCard(search.id)' class="textMiseAjour" >{{dateSearch(search.created_at)}}</p>
+          </ion-col>
+        </ion-row>
+        <div class="horizontalLine"></div>
+        <ion-row style="vertical-align: middle;">
+          <ion-col style="text-align: center">
+            <img [class.opacity]='true' src='/assets/img/cercle2.png' class="cercle2" />
+            <span [class.opacity]='true' class="textNumber" *ngIf="search.hits">{{search.hits}}</span>
+            <span [class.opacity]='true' class="textNumber" *ngIf="!search.hits">0</span>
+          </ion-col>
+          <ion-col style="text-align: center">
+            <div class="verticalDiv"></div>
+            <img [class.opacity]='true' src='/assets/img/smallLogo2.png' class="smallLogo" />
+            <span [class.opacity]='true' class="textNumber">{{search.realised_intro}}</span>
+          </ion-col>
+          <ion-col style="text-align: center">
+            <div class="verticalDiv"></div>
+            <img [class.opacity]='true' src='/assets/img/exclude2.png' class="exclude" />
+            <span [class.opacity]='true' class="textNumber" *ngIf="search.potential_search >= 10000">{{calculateHints(search.potential_search)}}</span>
+            <span [class.opacity]='true' class="textNumber" *ngIf="search.potential_search > 1000 && search.potential_search < 10000">{{search.potential_search}}</span>
+            <span [class.opacity]='true' class="textNumber" *ngIf="search.potential_search <= 1000">{{search.potential_search}}</span>
+          </ion-col>
+      </ion-row>
+
+      </ion-card>
+    </div>
+  </div>
+
+  <button [ngClass]="cssBtn" class="buttonNewRech" (click)='goPageNewsearch()'>
+    <p class="textNewRech">{{ 'search_tab1_new_search_button' | translate }}</p> 
+    <img src='/assets/img/plus2.png' class="plus" />
+  </button>
+</ion-content>

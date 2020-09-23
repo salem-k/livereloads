@@ -1,0 +1,266 @@
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+ion-auto-complete .ion-searchbar{
+    --border-radius: 100px;
+}
+// .sc-ion-searchbar-md-h {
+   
+// }
+.checkBox {
+    margin-top: 20px;
+}
+.focusedInput {
+    border: 1px solid;
+    border-color: #39639d;
+    --placeholder-color: transparent !important;
+}
+.header-md::after,
+.footer-md::before {
+    background: none;
+}
+.header {
+    height: 94px;
+    background-color: #f9f9f9;
+}
+.rowHeader {
+    margin-top: 16px;
+}
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 18px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -40px;
+}
+.ios .iconGoBack {
+    height: 18px;
+    width: 8px;
+    margin-top: 18px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+.input {
+    width: 90%!important;
+    height: 34px;
+    margin: auto;
+    margin-top: 20px;
+    background: #f2f2f2;
+    border-radius: 100px;
+    margin-bottom: 40px;
+    margin-left: 27px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    --placeholder-color: #acacac;
+    --placeholder-opacity: 9;
+    // color: #acacac;
+}
+.imgInput {
+    width: 11.84px;
+    height: 10.55px;
+    margin: 12px;
+}
+.textInput {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 102% */
+
+    display: flex;
+    align-items: center;
+
+    color: #acacac;
+}
+.divInput {
+    height: 34px;
+    width: 1px;
+    margin-right: 10px;
+    background: #f9f9f9;
+}
+.focusedDiv {
+    background: #39639d;
+}
+.text1 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #c4c4c4;
+    margin-left: 32px;
+    // margin-top: 40px;
+}
+ion-checkbox {
+    margin-top: 23px;
+    margin-right: 30px;
+    --height: 20px;
+    --width: 20px;
+    --background: #ffffff;
+    --border-width: 0px !important;
+    --border-radius: 0px;
+    --checkmark-color: #39639d;
+    --background-checked: #ffffff;
+    --checkmark-width: 2px;
+}
+.text2 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin-left: 24px;
+}
+.textSearch {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin-left: 0px;
+}
+.row1 {
+    margin-top: -15px;
+}
+.center {
+    text-align: center;
+}
+.button {
+    width: 289px;
+    height: 36px;
+    background: linear-gradient(90.87deg, #39639d 0%, #2789ae 102.22%);
+    outline: none;
+    border-radius: 100px;
+}
+.button[disabled] {
+    background: #c4c4c4;
+}
+.textButton {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.divButton {
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 90px;
+}
+.textResult {
+    // color: #c4c4c4;
+    color: #000000;
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+    }
+}
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 18px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}
+ion-auto-complete {
+    // overflow: hidden !important;
+    // width:    90vw;
+    // display:  inline-block;
+  
+    ion-searchbar {
+      //padding: 1px !important;
+      --border-radius:100px;
+    }
+  
+    .disabled input.searchbar-input {
+      pointer-events: none;
+      cursor: default;
+    }
+  
+    ul {
+      position:        absolute;
+      width:           90vw;
+      margin-top:      0;
+      background:      #FFF;
+      list-style-type: none;
+      padding:         0;
+      left:            16px;
+      z-index:         999;
+      box-shadow:      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  
+      li {
+        padding:       15px;
+        border-bottom: 1px solid #c1c1c1;
+      }
+  
+      ion-auto-complete-item {
+        height: 40px;
+        width:  100%;
+      }
+  
+      li:last-child {
+        border: none;
+      }
+  
+      li:focus,
+      li.focus {
+        cursor:     pointer;
+        background: #f1f1f1
+      }
+    }
+  
+    .hidden {
+      display: none;
+    }
+  
+    .loading input.searchbar-input {
+      background:      white url(/assets/loading.gif) no-repeat right 4px center;
+      background-size: 25px 25px;
+    }
+  
+    .searchbar-clear-button.sc-ion-searchbar-md {
+      right: 34px;
+    }
+  
+    .selected-items {
+      float: left;
+    }
+  }

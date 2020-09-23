@@ -1,0 +1,76 @@
+<ion-content fullscreen class='content' scroll-y="false">
+      <p class="title">{{ 'popup_relation_title' | translate }}</p>
+      <img src='/assets/images/iconClose.png' class="icon" (click)='closeModal()'/>
+  <ion-grid>
+    <ion-row class="row1">
+      <ion-col size='5'>
+        <img src='/assets/images/profil.png' class="profil"/>
+      </ion-col>
+      <ion-col size='7'>
+        <p class="name">Arnaud Gazet</p>
+        <p class="text">Zagett</p>
+        <p class="text2">Président Fondateur</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row3">
+      <ion-col>
+        <p class="text3">{{ 'popup_detail_page_do_relationship' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowTextRelation">
+      <ion-col>
+        <p class="text4" [innerHTML]="'popup_relation_num_relationships_you_owe' | translate:{value: 9}"></p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowRelation">
+      <ion-col size='3'>
+        <img src='/assets/images/profil.png' class="img1"/>
+        <p class="text6">Arnaud</p>
+      </ion-col>
+      <ion-col size='1'>
+        <p class="text7">12</p>
+      </ion-col>
+      <ion-col size='4'>
+        <img src='/assets/images/disk.png' class="img2"/>
+      </ion-col>
+      <ion-col size='1'>
+        <p class="text8">3</p>
+      </ion-col>
+      <ion-col size='3'>
+        <img src='/assets/images/user.png' class="img1"/>
+        <p class="text6">Olivier</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="textSearch">{{ 'popup_relation_searchs_label' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-card class="card">
+      <p class="text9">{{ 'motif_page_search_label' | translate }}</p>
+      <p class="text10">Direction Marketing et communication.</p>
+          <img src='/assets/images/cercle.svg' class='cercle'/>
+        <p class="text11" [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:21}"></p>
+          <button class="buttonClass">
+                <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+    </ion-card>
+    
+    <ion-card class="card">
+      <p class="text9">{{ 'motif_page_search_label' | translate }}</p>
+      <p class="text10">{{trimString('Direction Marketing et communication.Direction Marketing et communication.Direction Marketing et communication.Direction Marketing et communication.Direction Marketing et communication.',95)}}</p>
+      
+          <img src='/assets/images/cercle.svg' class='cercle'/>
+        <p class="text11" [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:21}"></p>
+      
+          <button class="buttonClass" >
+                <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+              <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+       
+       
+    
+    </ion-card>
+  </ion-grid>
+</ion-content>

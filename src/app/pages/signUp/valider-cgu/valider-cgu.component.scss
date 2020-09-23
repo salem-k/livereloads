@@ -1,0 +1,198 @@
+@keyframes mover {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+.mover {
+  animation-name: mover;
+  animation-duration: 0.2s;
+}
+.img {
+  width: 89px;
+  height: 74px;
+  margin: 25px auto;
+}
+.center {
+  text-align: center;
+}
+ion-header,
+ion-footer {
+  background: #f9f9f9;
+}
+ion-textarea {
+  padding: 0 10%;
+  margin: 0 auto;
+  height: 200px;
+  overflow-y: scroll;
+  height: 55%;
+  background: red;
+}
+h1 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #010101;
+  text-transform: uppercase
+}
+.ios .h1 {
+  font-size: 16px;
+}
+.content {
+  padding: 25px 45px;
+  background-color: rgb(255, 254, 254);
+}
+ion-content {
+  height: 60%;
+  overflow-y: auto;
+  --ion-background-color: rgb(255, 254, 254);
+}
+.textContent {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: -5px;
+}
+.ios .textContent {
+  font-size: 13px;
+}
+button {
+  outline: none;
+  margin: 0 auto;
+  width: 289px;
+  height: 36px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  display: block;
+  // margin-bottom: 30px;
+}
+.textButton {
+  width: 124.02px;
+  height: 17px;
+  margin: 0 auto;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ios .textButton {
+  font-size: 14px;
+}
+.btnActivated {
+  background: linear-gradient(97.29deg, #39639d -1.43%, #2789ae 100%) !important;
+}
+.textActivated {
+  color: #333333 !important;
+}
+.text-footer {
+  margin: 25px 0;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 16px;
+  text-align: center;
+  color: #e0e0e0;
+}
+.ios .text-footer {
+  font-size: 13px;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+.empty-div {
+  width: 100%;
+  height: 20px;
+  background: white;
+}
+.textConnect {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+  // margin-bottom: 8%;
+  // margin-top: -1%;
+  margin-top: 1%;
+  margin-bottom: 8%;
+}
+.ios .textConnect {
+  font-size: 13px;
+}
+@media (min-device-height: 700px) {
+  // button {
+  //   margin-bottom: 67px;
+  // }
+  .textConnect {
+    margin-bottom: 7%;
+  }
+}
+@media (min-device-height: 812px) {
+  .img {
+    margin-top: 15%;
+    margin-bottom: 20px;
+  }
+  .textConnect {
+    margin-bottom: 5%;
+  }
+  .ios .textConnect {
+    margin-bottom: 67px;
+  }
+  // button {
+  //   margin-bottom: 67px;
+  // }
+  // .ios button{
+  //   margin-bottom: 110px;
+  // }
+}
+@media (max-device-height: 667px) {
+  // button {
+  //   margin-bottom: 40px;
+  // }
+  .textConnect {
+    margin-bottom: 1%;
+  }
+}
+@media (max-device-height: 568px) {
+  h1 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  .textContent {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: -15px;
+  }
+  // button {
+  //   margin-bottom: 20px;
+  // }
+  .textConnect {
+    margin-bottom: 0%;
+    
+  }
+}

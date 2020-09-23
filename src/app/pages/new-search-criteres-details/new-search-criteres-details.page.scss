@@ -1,0 +1,184 @@
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 16px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -40px;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+.ios .iconGoBack {
+    height: 16px;
+    width: 8px;
+    margin-top: 21px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+.rowHeader {
+    margin-top: 16px;
+    height: 70px;
+}
+.header {
+    background: linear-gradient(316.34deg, #2789AE 0%, #39639D 100%);
+}
+.content {
+    position: absolute;
+    width: 100%;
+    height: 810px;
+    left: 0px;
+    top: 80px;
+
+    background: #F9F9F9;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 20px 20px 0px 0px;
+}
+.center {
+    text-align: center;
+}
+.tiret {
+    width: 26px;
+    height: 6px;
+    margin-top: 20px;
+}
+.titleContent {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #39639D;
+    margin-left: 27px;
+    margin-top: 38px;
+}
+.card1 {
+    width: 100%;
+    height: 99px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: auto;
+}
+.card2 {
+    width: 100%;
+    height: 171px;
+
+    background: #FFFFFF;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: auto;
+}
+.textCard1 {
+    width: 311px;
+    height: 48px;
+
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #000000;
+    margin-left: 26px;
+    margin-right: 38px;
+    margin-top: 15px;
+}
+.textCard2 {
+    width: 325px;
+    height: 99px;
+
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133%;
+    /* or 19px */
+
+    letter-spacing: 0.24px;
+
+    color: #000000;
+    margin-left: 26px;
+    margin-right: 38px;
+    margin-top: 15px;
+}
+.button {
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 120px;
+    width: 289px;
+    height: 36px;
+    background: linear-gradient(90.91deg, #39639D -1.43%, #2789AE 100%);
+    border-radius: 100px;
+    outline: none;
+}
+.textButton {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.text {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 146.9%;
+    /* or 15px */
+
+    letter-spacing: 0.24px;
+
+    color: #39639D;
+    width: 321px;
+    margin: auto;
+    margin-top: 15px;
+}
+.text span {
+    font-weight: 500;
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+    }
+    .ios .content {
+        top: 102px;
+    }
+    .ios .button {
+        bottom: 140px;
+    }
+}
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 16px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+   
+}

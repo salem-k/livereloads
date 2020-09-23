@@ -1,0 +1,82 @@
+.user {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 25%;
+    border-radius: 50px;
+}
+.ios .user {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+}
+.center {
+    text-align: center;
+}  
+.text2 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5625em;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.ios .text2 {
+    font-size: 25px;
+}
+.text3 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.ios .text3 {
+    font-size: 13px;
+}
+@media (min-device-height: 700px) {
+    .user {
+        margin-top: 30%;
+    }
+    .button {
+        margin-top: 30%;
+    }
+}
+@media (min-device-height: 812px) {
+    .user {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        margin-top: 40%;
+        border-radius: 60px;
+    }
+    .text3 {
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.9375em;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+}
+@media (max-device-height: 568px) {
+    .user {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-top: 15%;
+        border-radius: 50px;
+    }
+}
+@media (min-device-height: 836px) {
+    .user {
+        margin-top: 45%;
+    }
+  }

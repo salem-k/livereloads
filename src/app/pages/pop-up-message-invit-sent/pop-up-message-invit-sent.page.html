@@ -1,0 +1,73 @@
+<ion-content scroll-y="false">
+  <img src='/assets/images/iconClose.png' class="icon" (click)='closeModal()'/>
+  <p class="title">{{ 'popup_message_sent_title' | translate }}</p>
+  <ion-grid>
+    <ion-row class="row1">
+      <ion-col size='2'>
+        <img src='/assets/images/iconEdit.png' class="iconEdit"/>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text1">{{ 'popup_invit_message_request_relationship' | translate }}</p>
+        <p class="text2">{{ 'popup_message_sent_sent_label' | translate }}</p>
+        <ion-row>
+          <ion-col size='2'>
+            <img src='/assets/images/profil2.png' class="img1"/>
+          </ion-col>
+          <ion-col size='2'>
+            <img src='/assets/images/user2.png' class="img2"/>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="verticalLine"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col size='2'>
+        <img src='/assets/images/iconTime.png' class="iconTime"/>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text3">{{ 'popup_message_sent_validation_label' | translate }}</p>
+        <p class="text4">{{ 'popup_message_sent_pending_label' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size='9'>
+        <img src='/assets/images/user2.png' class="img3"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="verticalLine2"></div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row3">
+      <ion-col size='2'>
+        <img src='/assets/images/logo2.png' class="img4"/>
+      </ion-col>
+      <ion-col size='10'>
+        <p class="text5">{{ 'popup_detail_page_do_relationship' | translate }}</p>
+        <p class="text4">{{ 'popup_message_sent_pending_label' | translate }}</p>
+        <ion-row>
+          <ion-col size='2'>
+            <img src='/assets/images/arnaud.svg' class="img5"/>
+          </ion-col>
+          <ion-col size='2'>
+            <img src='/assets/images/user2.png' class="img6"/>
+          </ion-col>
+          <ion-col size='2'>
+            <img src='/assets/images/profil2.png' class="img7"/>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <div class="center">
+      <button class='button'>
+        <p class='textButton'>{{ 'finish_button' | translate }}</p>
+      </button></div>
+  </ion-grid>
+
+</ion-content>

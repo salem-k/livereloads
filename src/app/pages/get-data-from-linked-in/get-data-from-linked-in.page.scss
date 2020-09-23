@@ -1,0 +1,49 @@
+.logo {
+  width: 109px;
+  height: 90px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+ion-spinner {
+  color: #39639D;
+  width: 39.03px !important;
+  height: 40px !important;
+  position: absolute;
+  top: 60%;
+  width: 100% !important;
+}
+.text1 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+}
+.text2 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+.center {
+  text-align: center;
+}

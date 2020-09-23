@@ -1,0 +1,48 @@
+<ion-content #motif scroll-y="false">
+  <p class="title">{{ 'motif_page_search_label' | translate }}</p>
+  <img src='/assets/images/iconClose.png' class="icon" (click)='closeModal()'/>
+  <ion-grid>
+    <ion-row>
+      <ion-col size='4'>
+        <img src='/assets/images/arnaud.svg' class="img"/>
+      </ion-col>
+      <ion-col size='8'>
+        <p class="text1">Arnaud Gazet</p>
+        <p class="text2">Zagett</p>
+        <p class="text3">Président Fondateur</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text4">{{ 'motif_page_search_label' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text5">Direction Marketing et communication.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text4">{{ 'motif_page_subject_label' | translate }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text6">Zagett est extrêment pertinent sur le devellopement de contenu et a notamment fondé la
+          content factory de Sephora. Il aimerait te rencontrer et te présenter des cas qui pourrait vraiment
+          t’interesser. </p>
+      </ion-col>
+    </ion-row>
+      <ion-row class="row">
+        <img src='/assets/images/cercle.svg' class='cercle'/>
+        <p class="text7" [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value: 47}"></p>
+      </ion-row>
+    
+    <div class="center">
+      <button class='button' (click)="goCardPageWithPopUp()" >
+        <p class='textButton'>{{ 'start_button' | translate }}</p>
+      </button></div>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header  class="header">
+  <ion-grid>
+    <ion-row class="rowHeader">
+      <img src='/assets/images/iconGoBack.png' class='iconGoBack' (click)='goBack()'/>
+      <p class="title">Editer</p>
+    </ion-row>
+  </ion-grid>
+  <div class="borderheader">
+  </div>
+</ion-header>
+<ion-content *ngIf="selectedSearch">
+  <div  class="newIntro">
+    <p class="textNewIntro">Recherche active </p>
+    <ion-toggle [(ngModel)]="selectedSearch.activate" class='ion-toggle'></ion-toggle>
+  </div>
+  <div class="emptyDiv"></div>
+  <p  class="text1">{{selectedSearch.title}}</p>
+  <P class="text2">Motif</P>
+  <ion-card *ngIf='!clickedCard'  (click)='editCard()' class="card2">
+    <p [class.opacity]='!checked' class="textCard2">{{selectedSearch.motif}}</p>
+    <p class="textEdit">editer</p>
+</ion-card>
+<textarea #searchInput (focusin)='onFocus()'
+(focusout)="onBlur()" *ngIf='clickedCard' class="card3" [(ngModel)]="selectedSearch.motif">
+  
+</textarea>
+
+<div  class="divButton">
+  <button class="button" >
+    <p class="textButton" (click)="saveSearch()">Enregistrer</p>
+  </button>
+</div>
+ 
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-card class="cardNotif">
+  <ion-row (click)='goNotificationsPush()'>
+    <ion-col>
+      <p class="textCard2">{{ 'notif_component_push_notifications_label' | translate }} </p>
+    </ion-col>
+      <img src='/assets/img/sup.png' class="supCard2" />
+  </ion-row>
+  <div class='borderCard2'></div>
+  <ion-row (click)='goEmailPage()'>
+    <ion-col>
+      <p class="textCard2">{{ 'notif_component_emails_label' | translate }}</p>
+    </ion-col>
+      <img src='/assets/img/sup.png' class="supCard2" />
+  </ion-row>
+</ion-card>

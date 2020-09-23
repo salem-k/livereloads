@@ -1,0 +1,162 @@
+.imgTab {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 2px;
+}
+.ios .imgTab {
+    margin-top: -4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.tab-selected {
+    --color-selected: rgb(255, 253, 253);
+    ion-avatar{
+        border: 1px solid #39639d !important;
+    }
+}
+.tab-selected ion-img.iconSearchTab {
+    background: url("../../../assets/images/iconSearchSelected.png");
+    background-size: 25px 25px;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin: auto;
+}
+.ios .tab-selected ion-img.iconSearchTab {
+    background-size: 30px 30px;
+    padding: 20px;
+}
+.iconSearchTab {
+    background: url("../../../assets/images/iconSearchTab.png");
+    background-size: 25px 25px;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.ios .iconSearchTab {
+    background-size: 30px 30px;
+    padding: 20px;
+}
+.tab-selected ion-img.iconRectangle2 {
+    background: url("../../../assets/images/iconRectangle2.png");
+    background-size: 30px 30px;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.ios .tab-selected ion-img.iconRectangle2 {
+    background-size: 40px 35px;
+    padding: 20px;
+}
+.iconRectangle2 {
+    background: url("../../../assets/images/iconRectangle3.png");
+    background-size: 30px 30px;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.ios .iconRectangle2 {
+    background-size: 40px 35px;
+    padding: 20px;
+}
+ion-tab-bar {
+    height: 50px;
+    --border:none;
+}
+
+ion-tab-bar,
+ion-tab-button {
+    background-color: rgb(255, 253, 253);
+}
+.background {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+}
+.background2 {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color: white;
+}
+.ios .background {
+    height: 84px;
+}
+
+@media (min-device-height: 700px) {
+   
+}
+@media (min-device-height: 812px) {
+   
+}
+@media (min-device-height: 836px) {
+  
+  }
+@media (max-device-height: 667px) {
+  
+  
+}
+@media (max-device-height: 568px) {
+   
+    .ios .imgTab {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        padding: 2px;
+    }
+
+    .ios .tab-selected {
+        --color-selected: rgb(255, 253, 253);
+        ion-img.imgTab {
+            border: 1px solid #39639d !important;
+        }
+    }
+    .ios .tab-selected ion-img.iconSearchTab {
+        background: url("../../../assets/images/iconSearchSelected.png");
+        background-size: 25px 25px;
+        background-color: transparent !important;
+        background-repeat: no-repeat;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .ios .iconSearchTab {
+        background: url("../../../assets/images/iconSearchTab.png");
+        background-size: 25px 25px;
+        background-color: transparent !important;
+        background-repeat: no-repeat;
+        padding: 15px;
+    }
+
+    .ios .tab-selected ion-img.iconRectangle2 {
+        background: url("../../../assets/images/iconRectangle2.png");
+        background-size: 30px 30px;
+        background-color: transparent !important;
+        background-repeat: no-repeat;
+        padding: 15px;
+    }
+
+    .ios .iconRectangle2 {
+        background: url("../../../assets/images/iconRectangle3.png");
+        background-size: 30px 30px;
+        background-color: transparent !important;
+        background-repeat: no-repeat;
+        padding: 15px;
+    }
+
+    .ios ion-tab-bar {
+        height: 5%;
+    }
+    .ios .background {
+        height: 5%;
+    }
+}

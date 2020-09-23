@@ -1,0 +1,427 @@
+// @keyframes mover {
+//   0% { transform: translateX(100%); }
+//   100% { transform: translateX(0%); }
+// }
+// .mover {
+//   animation-name: mover;
+//   animation-duration: 2s;
+// }
+ion-content {
+  --ion-background-color: #f9f9f9;
+}
+.footer {
+  background-color: #f9f9f9;
+  // animation-name: mover;
+  // animation-duration: 2s;
+}
+.header {
+  background-color: #f9f9f9;
+  // animation-name: mover;
+  // animation-duration: 2s;
+}
+.title {
+  margin: auto;
+  margin-top: 18%;
+  font-family: "UntitledSans";
+  font-style: MEDIUM;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.ios .title {
+  font-size: 16px;
+}
+.text1 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 17px;
+  color: #828282;
+}
+.ios .text1 {
+  font-size: 14px;
+}
+.text2 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 17px;
+  color: #828282;
+}
+.ios .text2 {
+  font-size: 14px;
+}
+.text3 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 17px;
+  color: #828282;
+}
+.ios .text3 {
+  font-size: 14px;
+}
+.row1 {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 5%;
+}
+.row2 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.card {
+  background-color: #ffffff;
+  width: 287px;
+  height: 53px;
+  margin: auto;
+  margin-top: 6%;
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+.icon1 {
+  color: #e0e0e0;
+  margin-top: 20px;
+}
+.icon2 {
+  color: #39639d;
+  margin-top: 20px;
+}
+.buttonSynchronize1 {
+  width: 289px;
+  height: 36px;
+  border-radius: 30px;
+  background: #d5d7db;
+  color: white;
+  outline: none;
+  .iconLinkedIn {
+    float: left;
+  }
+  margin-bottom: 3%;
+}
+.buttonSynchrize2 {
+  margin-bottom: 10px;
+  width: 289px;
+  height: 36px;
+  border-radius: 30px;
+  background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  //color: white;
+  outline: none;
+  .iconLinkedIn {
+    float: left;
+  }
+  // position: absolute;
+  // left: 50%;
+  // margin-left: -145px;
+  // bottom: 30px;
+  padding: 0px;
+}
+.iconLinkedIn {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #ffffff;
+  letter-spacing: 0em;
+  margin-left: 17px;
+  
+}
+.ios .iconLinkedIn {
+  font-size: 20px;
+  margin-top: -1px;
+}
+.textButtonSynch {
+  font-family: "UntitledSans";
+  font-style: medium;
+  // font-weight: 500;
+  font-size: 0.875em;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: center;
+  float: left;
+  width: 100%;
+  line-height: 1.1em;
+  
+}
+.ios .textButtonSynch {
+  font-size: 14px;
+  margin: 9px;
+}
+.textConnect {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+  margin-bottom: 8%;
+  margin-top: -1%;
+  
+}
+.ios .textConnect {
+  font-size: 13px;
+}
+.textSpan {
+  margin-left: -53px;
+  font-weight: 500;
+  text-transform: uppercase
+}
+.md .textSpan {
+  margin-left: -27px;
+}
+.buttonSynchrize2[disabled] {
+  background: #d5d7db;
+}
+.textConnect2 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #f9f9f9;
+  margin-bottom: 8%;
+  margin-top: -1%;
+}
+.ios .textConnect2 {
+  font-size: 13px;
+}
+.textAccept {
+  height: 9px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #333333;
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+}
+.ios .textAccept {
+  font-size: 12px;
+}
+.ion-toggle {
+  --background: linear-gradient(180deg, rgba(130, 130, 130, 0.1) 0%, rgba(224, 224, 224, 0.1) 100%);
+  --background-checked: linear-gradient(180deg, rgba(57, 99, 157, 0.1) 0%, rgba(39, 137, 174, 0) 100%);
+  --handle-background: #bdbdbd;
+  --handle-background-checked: linear-gradient(110.85deg, #39639d 9.4%, #2789ae 88.56%);
+  // display: flex !important;
+  // align-content: center !important;
+  // align-items: center !important;
+  margin-top: -2px;
+}
+.ios .ion-toggle {
+  margin-top: 2px;
+}
+.center {
+  text-align: center;
+}
+
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+.rowCheckBox{
+  margin-left: 15%;
+  margin-top: -5%;
+}
+// ion-checkbox {
+//   margin-top: 21px;
+//   margin-right: 15px;
+//   --height: 18px;
+//   --width: 18px;
+//   --background: #f2f2f2;
+//   --border-width: 1px !important;
+//   --border-style: solid !important;
+//   --border-radius: 0px;
+//   --checkmark-color: #254168;
+//   --background-checked: white;
+//   --border-color: #f2f2f2;
+//   --border-color-checked: #254168;
+// }
+.textCheckBox {
+  margin-left: -15px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8125em;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #828282;
+}
+.checkBox1 {
+    height: 18px;
+    width: 18px;
+    margin-top: 13px;
+    margin-right: 15px;
+    margin-left: -18px;
+    --height: 10px !important;
+    --width: 10px !important;
+    --background: #f2f2f2;
+    --border-width: 1px !important;
+    --border-style: solid !important;
+    --border-radius: 0px;
+    --checkmark-color: #E0E0E0;
+    --background-checked: #F2F2F2;
+    --border-color: #f2f2f2;
+    --border-color-checked: transparent;
+}
+.checkBox2 {
+    height: 18px;
+    width: 18px;
+    margin-top: 13px;
+    margin-right: 15px;
+    margin-left: -16px;
+    --height: 10px !important;
+    --width: 10px !important;
+    --background: #f2f2f2;
+    --border-width: 1px !important;
+    --border-style: solid !important;
+    --border-radius: 0px;
+    --checkmark-color: #39639D;
+    --background-checked: #F2F2F2;
+    --border-color: #F2F2F2;
+    --border-color-checked: #39639D;
+}
+@media (min-device-height: 700px) {
+  .textConnect {
+    margin-top: -1%;
+    margin-bottom: 7%; 
+  }
+  .textConnect2 {
+    margin-top: -1%;
+    margin-bottom: 7%; 
+  }
+  .buttonSynchrize2 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    //color: white;
+    // bottom: 67px;
+    .iconLinkedIn {
+      float: left;
+    }
+  }
+}
+@media (min-device-height: 812px) {
+  .card {
+    width: 287px;
+    height: 53px;
+    margin: auto;
+    margin-top: 8%;
+  }
+  .textConnect {
+    //margin-top: 8%;
+    margin-top: -1%;
+  margin-bottom: 5%;
+    
+  }
+  .ios .textConnect {
+    margin-bottom: 67px;
+  }
+  .textConnect2 {
+    //margin-top: 8%;
+    margin-top: -1%;
+  margin-bottom: 5%;
+    
+  }
+  .ios .textConnect2{
+    margin-bottom: 67px;
+  }
+  .buttonSynchrize2 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    //color: white;
+    .iconLinkedIn {
+      float: left;
+    }
+    // bottom: 67px;
+  }
+  // .ios .buttonSynchrize2{
+  //   bottom: 110px;
+  // }
+  .title {
+    margin-top: 33%;
+    margin-bottom: 10%;
+  }
+}
+@media (max-device-height: 667px) {
+  .textConnect {
+    margin-top: -1%;
+    margin-bottom: 1%;
+    
+  }
+  .textConnect2 {
+    margin-top: -1%;
+    margin-bottom: 1%;
+    
+  }
+  .buttonSynchrize2 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    //color: white;
+    .iconLinkedIn {
+      float: left;
+    }
+    // bottom: 40px;
+  }
+}
+
+@media (max-device-height: 640px) {
+  .textConnect {
+    margin-top: -1%;
+    margin-bottom: 1%;
+    
+  }
+  .textConnect2 {
+    margin-top: -1%;
+    margin-bottom: 1%;
+    
+  }
+  // .buttonSynchrize2 {
+  //   margin-bottom: 3%;
+  // }
+}
+@media (max-device-height: 568px) {
+  .row2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: -30px;
+  }
+  .buttonSynchrize2 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    //color: white;
+    .iconLinkedIn {
+      float: left;
+    }
+  }
+  .textConnect {
+    margin-bottom: 0%;
+    margin-top: -1%;
+    
+  }
+  .textConnect2 {
+    margin-bottom: 0%;
+    margin-top: -1%;
+    
+  }
+}

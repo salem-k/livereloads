@@ -1,5 +1,7 @@
 {
   "name": "tesst",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

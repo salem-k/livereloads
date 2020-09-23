@@ -1,0 +1,210 @@
+.textContact {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 102% */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin-left: 16px;
+    margin-top: 25px;
+}
+.fleche {
+    width: 17px;
+    height: 19px;
+    float: right;
+    margin-top: -58px;
+    margin-right: 27px;
+    outline: none;
+    position: relative;
+}
+.textContact2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height, or 102% */
+    display: flex;
+    align-items: center;
+
+    color: #39639D;
+    margin-left: 16px;
+    margin-top: -7px;
+}
+// .rowInvit {
+//     // margin-top: 26px;
+// }
+.imgInvit {
+    width: 43px;
+    height: 43.2px;
+    margin-left: 20px;
+}
+.textName {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    color: #000000;
+    margin-top: -7px;
+    margin-left: 12px;
+    width: 185.83px;
+}
+.textJob {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -13px;
+    margin-left: 12px;
+    width: 257px;
+}
+.imgSearch {
+    width: 12px;
+    height: 12px;
+    margin-top: -7px;
+    margin-left: 12px;
+}
+.textSearch {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 13px;
+    /* identical to box height, or 104% */
+    display: flex;
+    align-items: center;
+    
+    color: #828282;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+.buttonAccept {
+    width: 102px;
+    height: 32px;
+    background: linear-gradient(156.1deg, #39639D 0%, #2789AE 103.13%);
+    margin-left: 12px;
+    outline: none;
+}
+.textButtonAccept {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.buttonDecline {
+    width: 102px;
+    height: 32px;
+    margin-left: 19px;
+    // border: 1.5px solid #39639D;
+    background: transparent;
+    outline: none;
+    --border-radius: 0px;
+    --background: transparent;
+    --background-activated: transparent;
+    --background-focused: transparent;
+    --background-hover: transparent;
+    --border-color: #39639D;
+    margin-top: 0px;
+}
+.textButtonDecline {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #39639D;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.filtre {
+    position: fixed;
+    background: rgba(255,255,255,0.8);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    
+}
+.bg {
+    background: rgba(255,255,255,0.8); 
+}
+.heightDiv {
+    height: 1px;
+}
+.divPopOver {
+    height: 58%;
+    width: 100%;
+    margin-top: 75%;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 20px 20px 0px 0px;
+}
+.tiret {
+    width: 58px;
+    height: 4px;
+
+    background: #DBDBDB;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+.text1PopOver {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #4F4F4F;
+    margin-left: 63px;
+    margin-top: 38px;
+}
+.initial {
+    text-align: initial;
+}
+.text3PopOver {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #4F4F4F;
+    margin-left: 63px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.lineHorizontalPopOver {
+    margin-left: 60px;
+    width: 100%;
+    height: 0px;
+
+    border: 1px solid #EAEAEA;
+}
+.tick {
+    width: 13px;
+    height: 9.96px;
+    float: left;
+    margin-left: 28px;
+    margin-top: 6px;
+    margin-right: 22px;
+}
+.text2PopOver {
+    font-weight: 500;
+}

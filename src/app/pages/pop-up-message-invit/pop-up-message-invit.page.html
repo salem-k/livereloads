@@ -1,0 +1,64 @@
+<ion-content fullscreen scroll-y="false">
+  <ion-grid>
+    <ion-row class="rowTitle">
+      <ion-col size="7">
+        <p class="text1" (click)="closeModal()">
+          {{ "later_label" | translate }}
+        </p>
+      </ion-col>
+      <ion-col>
+        <img
+          src="/assets/images/iconGoBack.png"
+          class="icon"
+          (click)="closeModal()"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="text2">
+          {{ "popup_invit_message_request_relationship" | translate }}
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+        <img src="/assets/images/profil2.png" class="img" />
+      </ion-col>
+      <ion-col>
+        <img src="/assets/images/user2.png" class="img2" />
+      </ion-col>
+    </ion-row>
+    <ion-card (click)="modifText()">
+      <textarea *ngIf="textArea" class="textArea" [(ngModel)]="messageInvit">
+      </textarea>
+      <p *ngIf="!textArea" class="textCard" [innerHTML]="messageInvit"></p>
+      <p class="textCard2"></p>
+    </ion-card>
+    <div class="center">
+      <img
+        *ngIf="!starBlack"
+        src="/assets/images/star.png"
+        class="img3"
+        (click)="changeIconStar()"
+      />
+      <img
+        *ngIf="starBlack"
+        src="/assets/images/star2.png"
+        class="img3"
+        (click)="changeIconStar()"
+      />
+    </div>
+
+    <p class="text3">{{ "popup_invit_default_message_label" | translate }}</p>
+
+    <div class="center">
+      <button class="buttonSynchrize2" (click)="sendMessage()">
+        <p class="textButtonSynch">
+          <span class="iconLinkedIn">in</span
+          ><span class="textSpan">ENVOYER</span>
+        </p>
+      </button>
+    </div>
+  </ion-grid>
+</ion-content>

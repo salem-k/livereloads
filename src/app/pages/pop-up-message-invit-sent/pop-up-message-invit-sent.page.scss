@@ -1,0 +1,292 @@
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+.icon {
+    outline: none;
+    width: 14.86px;
+    height: 14.28px;
+    margin: 20px;
+    margin-left: 87%;
+}
+.title {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    margin-top: -5%;
+}
+.ios .title {
+    font-size: 16px;
+}
+.row1 {
+    margin-left: 10%;
+    margin-top: -10%;
+}
+.iconEdit {
+    width: 34px;
+    height: 34px;
+    margin-top: 35px;
+}
+.text1 {
+    margin-top: 32px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 18px;
+    color: #333333;
+}
+.ios .text1 {
+    font-size: 16px;
+}
+.text2 {
+    margin-top: -15px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.78125em;
+    line-height: 18px;
+    color: #bdbdbd;
+}
+.ios .text2 {
+    font-size: 12.5px;
+}
+.img1 {
+    width: 29.78px;
+    height: 29.78px;
+    border-radius: 14.89px;
+}
+.img2 {
+    width: 29.78px;
+    height: 29.78px;
+    margin-left: -5px;
+    border-radius: 14.89px;
+}
+.verticalLine {
+    height: 118px;
+    width: 1px;
+    background: #39639d;
+    margin-left: 15%;
+    margin-top: -43px;
+}
+.row2 {
+    margin-left: 12%;
+    margin-top: -2%;
+}
+.iconTime {
+    width: 16px;
+    height: 14px;
+    margin-top: 16.8px;
+}
+.text3 {
+    margin-top: 1px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 18px;
+    color: #333333;
+}
+.ios .text3 {
+    font-size: 14px;
+}
+.text4 {
+    margin-top: -12px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.78125em;
+    line-height: 18px;
+    color: #bdbdbd;
+}
+.ios .text4 {
+    font-size: 12.5px;
+}
+.verticalLine2 {
+    height: 118px;
+    width: 1px;
+    background: #bdbdbd;
+    margin-left: 15%;
+    margin-top: -41px;
+}
+.img3 {
+    width: 29.78px;
+    height: 29.78px;
+    margin-left: 35%;
+    margin-top: -9px;
+    border-radius: 14.89px;
+}
+.img4 {
+    width: 34px;
+    height: 34px;
+    margin-top: 25.8px;
+}
+.row3 {
+    margin-left: 10%;
+    margin-top: -5%;
+}
+.img5 {
+    margin-top: -3px;
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+    margin-right: 5px;
+    border-radius: 12.5px;
+}
+.img6 {
+    margin-top: -3px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.5;
+    margin-right: 5px;
+    border-radius: 14px;
+}
+.img7 {
+    margin-top: -3px;
+    width: 29px;
+    height: 29.12px;
+    opacity: 0.5;
+    border-radius: 14.5px;
+}
+.text5 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 18px;
+    color: #bdbdbd;
+}
+.ios .text5 {
+    font-size: 14px;
+}
+.center {
+    text-align: center;
+}
+.button {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789AE 2.27%, #39639D 92.63%);
+    margin-top: 25px;
+    outline: none;
+    padding: 0px;
+}
+.textButton {
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.ios .textButton {
+    font-size: 14px;
+}
+
+@media (min-device-height: 700px) {
+    .button {
+        width: 289px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789AE 2.27%, #39639D 92.63%);
+        margin-top: 17%;
+    }
+    .row1 {
+        margin-left: 10%;
+        margin-top: -1%;
+    }
+}
+
+@media (min-device-height: 812px) {
+    .button {
+        width: 289px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789AE 2.27%, #39639D 92.63%);
+        margin-top: 33%;
+    }
+    .row1 {
+        margin-left: 10%;
+        margin-top: -1%;
+    }
+    .icon {
+        width: 14.86px;
+        height: 14.28px;
+        margin: 30px;
+        margin-left: 87%;
+    }
+    .title {
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 18px;
+        text-align: center;
+        color: #333333;
+        margin-top: -5%;
+    }
+}
+@media (max-device-height: 667px) {
+}
+
+@media (max-device-height: 640px) {
+    .button {
+        width: 289px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789AE 2.27%, #39639D 92.63%);
+        margin-top: 8%;
+    }
+}
+@media (max-device-height: 568px) {
+    .title {
+        margin-top: -10%;
+    }
+    .text1 {
+        margin-top: 32px;
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125em;
+        line-height: 18px;
+        color: #333333;
+    }
+    .verticalLine {
+        height: 90px;
+        width: 1px;
+        background: #39639d;
+        margin-left: 15%;
+        margin-top: -41px;
+    }
+    .verticalLine2 {
+        height: 90px;
+        width: 1px;
+        background: #bdbdbd;
+        margin-left: 15%;
+        margin-top: -46px;
+    }
+    .button {
+        width: 269px;
+        height: 36px;
+        border-radius: 30px;
+        background: linear-gradient(284.12deg, #2789AE 2.27%, #39639D 92.63%);
+        margin-top: 15px;
+    }
+    .img4 {
+        width: 34px;
+        height: 34px;
+        margin-top: 20.8px;
+    }
+    .iconTime {
+        width: 16px;
+        height: 14px;
+        margin-top: 14.8px;
+    }
+}

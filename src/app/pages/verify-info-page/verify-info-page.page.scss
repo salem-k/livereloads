@@ -1,0 +1,607 @@
+// @keyframes mover {
+//   0% { transform: translateX(100%); }
+//   100% { transform: translateX(0%); }
+// }
+// .mover {
+//   animation-name: mover;
+//   animation-duration: 2s;
+// }
+ion-content {
+  --ion-background-color: #f9f9f9;
+}
+.header {
+  background-color: #f9f9f9;
+  // animation-name: mover;
+  // animation-duration: 2s;
+}
+.error {
+  font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.52px;
+    color: #c20017;
+    margin-top: -15px;
+}
+.img {
+  width: 89px;
+  height: 74px;
+  margin: auto;
+  margin-top: 8%;
+}
+.img1 {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 28px;
+  // border-radius: 50;
+}
+ion-avatar img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+}
+.center {
+  text-align: center;
+}
+.focusedInput {
+  border: 1px solid ;
+  border-color:#39639D ;
+}
+.iconGoBack {
+  height: 18px;
+  width: 8px;
+  margin-left: 5%;
+  float: left;
+  // margin-top: 8%;
+}
+.md .divShadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  height: 40px;
+}
+.ios .divShadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  height: 45px;
+}
+.ios .heightHeader {
+  height: 15px;
+}
+.textButtonContinue {
+  height: 17px;
+  margin: auto;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ios .textButtonContinue {
+  font-size: 14px;
+}
+.buttonContinue[disabled] {
+  background: #e0e0e0;
+}
+.buttonContinue {
+  width: 289px;
+  height: 36px;
+  border-radius: 30px;
+  background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  outline: none;
+  padding: 0px;
+  position: absolute;
+  left: 50%;
+  margin-left: -145px;
+  bottom: 30px;
+}
+
+.buttonContinue3 {
+  width: 289px;
+  height: 36px;
+  border-radius: 30px;
+  background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  outline: none;
+  padding: 0px;
+  position: absolute;
+  left: 50%;
+  margin-left: -145px;
+  bottom: 30px;
+}
+
+.buttonContinue3[disabled] {
+  width: 289px;
+  height: 36px;
+  border-radius: 30px;
+  background: #e0e0e0;
+}
+
+
+
+
+  .textInput1 {
+    height: 40px;
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+    margin-top: 12%;
+  }
+  .ios .textInput1 {
+    font-size: 14px;
+  }
+  .textInput2 {
+    height: 40px;
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+    margin-top: 5%;
+  }
+  .ios .textInput2 {
+    font-size: 14px;
+  }
+  .textInput3 {
+    height: 40px;
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+    margin-top: 5%;
+  }
+  .ios .textInput3 {
+    font-size: 14px;
+  }
+  .md .input {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: auto;
+    width: 290px;
+    height: 34px;
+    margin-bottom: 5px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #010101;
+    --padding-start: 0px;
+   
+  }
+  .ios .input {
+    --padding-end: 0px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: auto;
+    width: 290px;
+    height: 34px;
+    margin-bottom: 5px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #010101;
+  }
+
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+
+@media (min-device-height: 700px) {
+  .buttonContinue3 {
+    bottom: 67px;
+  }
+  .text {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .text2 {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .buttonContinue {
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 67px;
+  }
+  .buttonContinue[disabled] {
+    background: #e0e0e0;
+  }
+  .rowCheck {
+    margin-left: 15%;
+    margin-top: 13%;
+  }
+}
+@media (max-device-height: 700px) {
+
+  .md .textInput1 {
+    height: 40px;
+    margin: auto;
+    margin-top: 5%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+  }
+  .ios .textInput1 {
+    font-size: 13px;
+    height: 40px;
+    margin: auto;
+    margin-top: 5%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+  }
+  
+  .md .textVerif {
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .ios .textVerif {
+    font-size: 16px;
+    margin: auto;
+    margin-top: 36px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+}
+@media (min-device-height: 701px) {
+  .md .textVerif {
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .ios .textVerif {
+    font-size: 16px;
+    margin: auto;
+    margin-top: 51px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .md .textInput4 {
+    height: 40px;
+    margin: auto;
+    margin-top: 20%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+  }
+  .ios .textInput4 {
+    font-size: 13px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+  }
+  
+}
+@media (max-device-height: 640px) {
+  .text {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .text2 {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .buttonContinue {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  }
+  .img {
+    width: 89px;
+    height: 74px;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .itemCheck {
+    margin-left: 40px;
+    margin-top: 6%;
+  }
+  .rowCheck {
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+}
+@media (max-device-height: 667px) {
+  .buttonContinue3 {
+    bottom: 40px;
+  }
+  .text {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .text2 {
+    height: 18px;
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .itemCheck {
+    margin-left: 11%;
+    margin-top: 7%;
+  }
+  .rowCheck {
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+  .buttonContinue {
+    bottom: 40px;
+  }
+}
+@media (max-device-height: 568px) {
+  .text {
+    height: 18px;
+    margin: auto;
+    margin-top: 5px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .text2 {
+    height: 18px;
+    margin: auto;
+    margin-top: 5px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+
+  .buttonContinue {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    bottom: 20px;
+  }
+  .buttonContinue3 {
+    bottom: 20px;
+  }
+  .img {
+    width: 89px;
+    height: 74px;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .img1 {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-top: 28px;
+    border-radius: 35;
+  }
+  .itemCheck {
+    margin-left: 5%;
+    margin-top: 0%;
+  }
+  .textInput4 {
+    height: 40px;
+    margin: auto;
+    margin-top: 0%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+  }
+
+  .buttonContinue2 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    margin-top: 10px;
+  }
+  .buttonContinue3 {
+    width: 289px;
+    height: 36px;
+    border-radius: 30px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    margin-top: 10px;
+  }
+  .rowCheck {
+    margin-left: 10%;
+    margin-top: 7%;
+  }
+  ion-checkbox {
+    margin-top: 20px;
+    margin-right: 10px;
+    --height: 18px;
+    --width: 18px;
+    --background: #f2f2f2;
+    --border-width: 1px !important;
+    --border-style: solid !important;
+    --border-radius: 0px;
+    --checkmark-color: #254168;
+    --background-checked: white;
+    --border-color: #f2f2f2;
+    --border-color-checked: #254168;
+  }
+}
+@media (min-device-height: 812px) {
+  
+  .itemCheck {
+    margin-left: 13%;
+    margin-top: 40%;
+  }
+  .rowCheck {
+    margin-left: 15%;
+    margin-top: 40%;
+  }
+  .img {
+    margin-top: 15%;
+    margin-bottom: 7px;
+  }
+  .buttonContinue {
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 67px;
+  }
+  .ios .buttonContinue {
+    bottom: 110px;
+  }
+  .md .textVerif {
+    margin: auto;
+    margin-top: 31px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+  .ios .textVerif {
+    font-size: 16px;
+    margin: auto;
+    margin-top: 61px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+  }
+}

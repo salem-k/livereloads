@@ -1,0 +1,436 @@
+.header {
+  width: 100%;
+  height: 196px;
+
+  background: linear-gradient(303.66deg, #2789AE 0%, #39639D 100%);
+}
+.refresher {
+  background: #F9F9F9;
+     --color: #2789AE;
+}
+.refresh {
+  background: #F9F9F9;
+}
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+ion-content {
+  --ion-background-color: #f9f9f9;
+}
+.textHeader {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 67px;
+  text-align: center;
+}
+.rowHeader {
+  margin-top: 16px;
+}
+.fleche {
+  width: 17px;
+    height: 19px;
+    margin-right: 12.99px;
+    float: right;
+    margin-top: -15px;
+}
+.scrollmenu {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 130px;
+  width: 100%;
+  margin-top: 18px;
+  // margin-left: 20px;
+}
+.content {
+  white-space: nowrap;
+  margin-left: -10px;
+}
+
+.scrollmenu ion-grid {
+  display: inline-block;
+}
+.item {
+  width: 60.65px;
+  height: 60.65px;
+  margin-left: 17px;
+  border-radius: 30.325px;
+}
+.row1 {
+  padding: 2px;
+  float: right;
+  margin-top: 47px;
+  margin-left: -27px;
+  position: relative;
+  z-index: 9;
+  width: 34px;
+  // height: 14px;
+  // background-color: #FFFFFF;
+  border-radius: 104.143px;
+}
+.positifNbrRow1 {
+  background: linear-gradient(120deg, #2789AE 0%, #399D4F 100%);
+}
+.negatifNbrRow1 {
+  background: linear-gradient(120deg, #455484 0%, #C32E3D 100%);
+}
+.row1Blue {
+  background: #2789AE ;
+}
+.divRow1 {
+  background: #FFFFFF;
+  width: 34px;
+  height: 14px;
+  /* padding: 1px; */
+  border-radius: 104.143px;
+  display: flex;
+  align-items: center;
+}
+// .ios .row1 {
+//     position: relative;
+//     z-index: 9;
+// }
+.gridScroll {
+  margin-right: -18px;
+}
+.textNumber {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 13px;
+  text-align: center;
+  color: #39649E;
+  font-family: "UntitledSans";
+  margin: 0 auto;
+  // margin-top: 0.5px;
+  margin-right: 5px;
+  margin-top: -0.1px;
+}
+.ios .textNumber {
+  font-size: 8px;
+  // margin-top: -3px;
+}
+.cercle {
+  margin: 0 auto;
+  width: 7.25px;
+  height: 9.94px;
+  margin-left: 5px;
+  // margin-top: 1px;
+  float: left;
+  margin-right: 6px;
+}
+.textName {
+  font-family: "UntitledSans";
+  margin-left: 22px;
+  margin-top: -3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  
+}
+.ios .textName {
+  //margin-top: -15px;
+  font-size: 10px;
+}
+.opacity {
+  opacity: 0.6;
+}
+.imgItemList {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background: white;
+  /* margin-left: 16px; */
+  padding: 3px;
+}
+.borderImg {
+  margin-left: 16px;
+  margin-top: 16px;
+  max-height: 49px;
+  background: linear-gradient(120deg, #455484 0%, #C32E3D 100%);
+  border-radius: 25px;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 49px;
+}
+.text1List {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 15px;
+  color: #000000;
+}
+.text2List {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #828282;
+}
+.imgLogo {
+  height: 11.43148136138916px;
+  width: 9px;
+  border-radius: 0px;
+  margin-top: 2px;
+  margin-right: 3px;
+}
+.text3List {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #39639D;
+  margin-right: 5px;
+}
+.text4List {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #39639D;
+}
+.card1 {
+  // width: 343px;
+  // height: 406px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 9.82808px;
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.col {
+  margin-top: 10px;
+}
+.text1Card {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #39639D;
+  margin-left: 14px;
+  margin-top: 14px;
+}
+.text2Card {
+  font-family: 'UntitledSans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.23999999463558197px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #000000;
+  margin-left: 14px;
+  margin-top: 7px;
+}
+.text3Card {
+  font-family: 'UntitledSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.23999999463558197px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #4F4F4F;
+  margin-left: 14px;
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-box-orient: vertical;
+  width: 306px;
+}
+.imgCard {
+  width: 343px;
+  height: 293px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/assets/img/balkis.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.divImg {
+  width: 100%;
+  height: 243px;
+  // background: linear-gradient(180deg, transparent 0%, #000000 85%), url(../../../assets/img/imgProfil1.png) no-repeat center;
+  background-size: cover;
+  margin-top: 15px;
+}
+.text4Card {
+  font-family: 'UntitledSans';
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0em;
+  color:  #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: 20px;
+}
+.text5Card {
+  font-family: 'UntitledSans';
+  color:  #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.text6Card {
+  font-family: 'UntitledSans';
+  color:  #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.lineHorizontalCard {
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  margin-top: 10px;
+}
+.height {
+  height: 160px;
+}
+.user {
+  width: 15px;
+  height: 17px;
+  margin-right: 15px;
+}
+.textNumber2 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 16px;
+  text-transform: lowercase;
+  
+  color: #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.rowCard {
+  margin-left: 15px;
+  margin-top: 18px;
+}
+.button1Card {
+  width: 111px;
+  height: 32px;
+  background: linear-gradient(95.46deg, #39639D 0%, #2789AE 98.3%);
+  border-radius: 100px;
+  margin-top: 10px;
+  outline: none;
+}
+.imgButton1 {
+  width: 9px;
+  height: 11.3px;
+  float: left;
+  margin-left: 7px;
+  margin-top: 2px;
+}
+.textButton1 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.button2Card {
+  width: 80px;
+  height: 23px;
+  background: #F2F2F2;
+  border-radius: 100px;
+  margin-top: 14px;
+  outline: none;
+}
+.textButton2 {
+  font-family: 'UntitledSans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #000000;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  //margin-top: 3px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  /* margin-top: 3px; */
+  margin-left: 5px;
+  float: left;
+}
+.imgButton2 {
+  height: 8px;
+  width: 6px;
+  border-radius: 0px;
+  float: right;
+  margin-top: 2px;
+
+
+}
+.slide {
+  text-align: inherit;
+}
+.row2Card {
+  background: black;
+  height: 71px;
+  margin-top: -12px;
+}
+.rowSearch {
+  margin-top: -10px;
+}
+@media (min-device-height: 812px) {
+  .ios .rowHeader {
+      margin-top: 35px;
+      margin-bottom: 7px;
+  }
+}

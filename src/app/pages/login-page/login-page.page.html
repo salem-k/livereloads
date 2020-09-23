@@ -1,0 +1,64 @@
+<ion-header [hidden]='inputFocus1 || inputFocus2' class="background">
+  <div class="center">
+    <img  src="/assets/images/logo.png" class="logo"/>
+  </div>
+  <p class="connectText">{{ 'login_page_connect_label' | translate }}</p>
+</ion-header>
+<ion-header *ngIf='inputFocus1 || inputFocus2' class="divShadow">
+  <div class="divHeader">
+    <div class="center">
+      <img src="/assets/images/iconGoBack.png" class="iconGoBack" />
+    </div>
+    <p class="textVerif">{{ 'login_page_connect_label' | translate }}</p>
+  </div>
+  <div class="heightHeader"></div>
+</ion-header>
+<ion-content scroll-y="false">
+  <!-- <div *ngIf='inputFocus1 || inputFocus2' class="divShadow">
+    <ion-img src="/assets/images/iconGoBack.png" class="iconGoBack" ></ion-img>
+    <p class="textVerif">Se connecter</p>
+</div> -->
+  <form [formGroup]="credentialsForm">
+    <p class="textInput">{{ 'login_page_email_label' | translate }}</p>
+    <ion-input 
+      class="input"
+      [class.focusedInput]='inputFocus1'
+      type="email"
+      formControlName="email"
+      placeholder='{{placeholder}}' (focusin)='onFocusLogin()' (focusout)='onBlurLogin()'
+      #Field1 (keyup.enter)="gotoNextField(Field2)"
+    ></ion-input>
+    <p class="textInput2">{{ 'login_page_password_label' | translate }}</p>
+    <ion-input
+      class="input"
+      [class.focusedInput]='inputFocus2'
+      type="password"
+      formControlName="password"
+      placeholder='{{placeholder2}}' (focusin)='onFocusPassword()' (focusout)='onBlurPassword()'
+      #Field2 (keyup.enter)="login()"
+    ></ion-input>
+    <p class="textInput3" (click)='goPageForgotPassword()'>{{ 'login_page_forgot_password_label' | translate }}</p>
+  </form>
+  <!--
+  <div [hidden]='inputFocus1 || inputFocus2' class="itemCheck">
+    <ion-grid>
+    <ion-row class="rowCheckBox">
+      <ion-checkbox [(ngModel)]="styleConnect"> </ion-checkbox>
+      <p class="textCheckBox">{{ 'login_page_stay_connected' | translate }}</p>
+    </ion-row>
+  </ion-grid>
+  </div>
+  -->
+</ion-content>
+<ion-footer [hidden]='inputFocus1 || inputFocus2' class="background">
+  <div  class="center">
+    <button *ngIf="!credentialsForm.valid" class="buttonConnect" disabled>
+      <p class="textButton">{{ 'login_page_connect_label' | translate }}</p>
+    </button>
+    <button *ngIf="credentialsForm.valid" class="buttonConnect2" (click)="login()">
+      <p class="textButton">{{ 'login_page_connect_label' | translate }}</p>
+    </button>
+    <p class="textInput4" (click)="signUp()">{{ 'login_page_signup_label' | translate }}</p>
+  </div>
+  
+</ion-footer>

@@ -1,0 +1,255 @@
+<ion-content class="mover" scroll-y="false" >
+<div class="scrollmenu" [class.divShadow]='scrollEvent'>
+  <div class="content">
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+    <ion-grid class="gridScroll"> 
+      <ion-col>
+        <img src='/assets/images/arnaud.svg' class='item'/>
+        <ion-row class='row1'>
+          <ion-col size='1'>
+            <ion-img src='/assets/images/cercle.svg' class='cercle'></ion-img>
+
+          </ion-col>
+          <ion-col size='2'>
+            <p class="textNumber">+99</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="textName">Arnaud</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+    </ion-grid>
+  </div>
+</div>
+<div (scroll)='onScroll($event)' class="listFriends">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+          <img src='/assets/images/arnaud.svg' class="imgCard"/>
+        <ion-col>
+          <p class='nameCard'>Arnaud Gazet</p>
+          <p class='text'>SalesFriends</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class='textRech'>{{ 'friends_search_what_friend_is_searching_label' | translate }}</p>
+          <p class='textRech2'>Direction Marketing et communication.</p>
+        </ion-col>
+      </ion-row>
+          <img src='/assets/images/cercle.svg' class='cercle2'/>
+          <!-- <p class='number'>47</p> -->
+          <p class="text4" 
+             [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:47}"></p>
+          <button class="buttonClass" >
+            <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+            <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+    </ion-grid>
+  </ion-card>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+          <img src='/assets/images/arnaud.svg' class="imgCard"/>
+        <ion-col>
+          <p class='nameCard'>Arnaud Gazet</p>
+          <p class='text'>SalesFriends</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class='textRech'>{{ 'friends_search_what_friend_is_searching_label' | translate }}</p>
+          <p class='textRech2'>Direction Marketing et communication.</p>
+        </ion-col>
+      </ion-row>
+          <img src='/assets/images/cercle.svg' class='cercle2'/>
+          <!-- <p class='number'>47</p> -->
+          <p class="text4" 
+             [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:47}"></p>
+          <button class="buttonClass" >
+            <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+            <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+    </ion-grid>
+  </ion-card>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+          <img src='/assets/images/arnaud.svg' class="imgCard"/>
+        <ion-col>
+          <p class='nameCard'>Arnaud Gazet</p>
+          <p class='text'>SalesFriends</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class='textRech'>{{ 'friends_search_what_friend_is_searching_label' | translate }}</p>
+          <p class='textRech2'>Direction Marketing et communication.</p>
+        </ion-col>
+      </ion-row>
+          <img src='/assets/images/cercle.svg' class='cercle2'/>
+          <!-- <p class='number'>47</p> -->
+          <p class="text4" 
+             [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:47}"></p>
+          <button class="buttonClass" >
+            <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+            <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+    </ion-grid>
+  </ion-card>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+          <img src='/assets/images/arnaud.svg' class="imgCard"/>
+        <ion-col>
+          <p class='nameCard'>Arnaud Gazet</p>
+          <p class='text'>SalesFriends</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p class='textRech'>{{ 'friends_search_what_friend_is_searching_label' | translate }}</p>
+          <p class='textRech2'>Direction Marketing et communication.</p>
+        </ion-col>
+      </ion-row>
+          <img src='/assets/images/cercle.svg' class='cercle2'/>
+          <!-- <p class='number'>47</p> -->
+          <p class="text4" 
+             [innerHTML]="'friends_search_num_available_introductions_in_contacts' | translate:{value:47}"></p>
+          <button class="buttonClass" >
+            <img src='/assets/images/iconButtonVoir.png' class='iconVoir'/>
+            <p class="textButtonVoir">{{ 'see_button' | translate }}</p>
+          </button>
+    </ion-grid>
+  </ion-card>
+</div>
+</ion-content>

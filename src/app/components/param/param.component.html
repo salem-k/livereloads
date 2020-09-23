@@ -1,0 +1,69 @@
+<!-- <ion-input class="inputRechParam" (focusin)='onFocus()' (focusout)='onBlur()' [(ngModel)]='valueInput'>
+  <img src='/assets/img/smallSearchBlack.png' class="imgSearch2" [class.opacity]='true'/>
+  <p *ngIf='focused == false && valueInput == "" ' class="textInput" [class.opacity]='true'>{{ 'search_label' | translate }}</p>
+</ion-input> -->
+<ion-card class="cardParam1">
+  <ion-row>
+    <ion-avatar class="imgCardParam">
+      <img [src]="user.linkedin.thumbnail_path" />
+    </ion-avatar>
+    <ion-col class="colCard">
+      <p class="text1Card">{{user.first_name}} {{user.last_name}}</p>
+      <p class="text2Card">{{user.linkedin.occupation}}</p>
+
+    </ion-col>
+    <img src="/assets/img/sup.png" class="sup2" />
+  </ion-row>
+</ion-card>
+<ion-card class="cardParam2">
+  <ion-row>
+    <ion-col>
+      <p class="textCard2">{{ "params_component_friends_list" | translate }}</p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+  <div class="borderCard2"></div>
+  <ion-row>
+    <ion-col>
+      <p class="textCard2">
+        {{ "params_component_notifications_parameters" | translate }}
+      </p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+  <div class="borderCard2"></div>
+  <ion-row>
+    <ion-col>
+      <p class="textCard2">
+        {{ "params_component_invite_contacts" | translate }}
+      </p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+  <div class="borderCard2"></div>
+  <ion-row (click)="goSecurityPage()">
+    <ion-col>
+      <p class="textCard2">
+        {{ "params_component_security_and_connexion" | translate }}
+      </p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+  <div class="borderCard2"></div>
+  <ion-row>
+    <ion-col>
+      <p class="textCard2">{{ "params_component_my_account" | translate }}</p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+  <div class="borderCard2"></div>
+  <ion-row>
+    <ion-col>
+      <p class="textCard2">{{ "params_component_help" | translate }}</p>
+    </ion-col>
+    <img src="/assets/img/sup.png" class="supCard2" />
+  </ion-row>
+</ion-card>
+<div class="center">
+  <img src="/assets/img/logoSF.png" class="logoSF" />
+</div>

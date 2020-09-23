@@ -1,0 +1,95 @@
+ion-content {
+    --ion-background-color: #f9f9f9;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+.header {
+    height: 94px;
+    background-color: #F9F9F9;
+}
+.rowHeader {
+    margin-top: 16px;
+}
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 18px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -40px;
+}
+.ios .iconGoBack {
+    height: 18px;
+    width: 8px;
+    margin-top: 18px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+.center {
+    text-align: center;
+}
+.button {
+    width: 289px;
+    height: 36px;
+    background: #C4C4C4;
+    outline: none;
+}
+.textButton {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.divButton {
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    bottom: 90px;
+}
+.text1 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 147.3%;
+    /* or 18px */
+
+    text-align: center;
+    letter-spacing: 0.24px;
+
+    color: #828282;
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+    }
+}
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 18px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+}

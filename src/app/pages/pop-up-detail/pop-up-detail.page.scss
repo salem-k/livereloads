@@ -1,0 +1,405 @@
+ion-content {
+    --ion-background-color: #FFFFFF;
+  }
+.icon {
+    outline: none;
+    width: 14.86px;
+    height: 14.28px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+.title {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+    margin-top: 25px;
+
+}
+.ios .title {
+    font-size: 16px;
+}
+
+.profil {
+    width: 106.2px;
+    height: 105.71px;
+    margin: 27px;
+    border-radius: 53.1px;
+}
+.name {
+    margin-top: 40px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #000000;
+}
+.ios .name {
+    font-size: 16px;
+}
+.text {
+    margin-top: -15px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 16px;
+
+    color: #4f4f4f;
+}
+.ios .text {
+    font-size: 13px;
+}
+.text2 {
+    margin-top: -12px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 16px;
+
+    color: #4f4f4f;
+}
+.ios .text2 {
+    font-size: 13px;
+}
+.text4 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #39639d;
+    margin-left: 27px;
+    margin-top: -15px;
+}
+.ios .text4 {
+    font-size: 16px;
+}
+.textMotif {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #39639d;
+    margin-left: 27px;
+    margin-top: -3px;
+}
+.ios .textMotif {
+    font-size: 16px;
+}
+.text5 {
+    width: 309px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 17px;
+    color: #333333;
+    margin-left: 27px;
+    margin-top: -18px;
+}
+.ios .text5 {
+    font-size: 14px;
+}
+.text6 {
+    width: 309px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #000000;
+    margin-left: 27px;
+    margin-top: -18px;
+}
+.ios .text6 {
+    font-size: 14px;
+}
+.text7 {
+    margin-left: 27px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #39639d;
+}
+.ios .text7 {
+    font-size: 16px;
+}
+.rowTextRelation {
+    margin-top: -20px;
+}
+.text8 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #828282;
+    margin-left: 27px;
+}
+.ios .text8 {
+    font-size: 13px;
+}
+.text8 span {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #000000; 
+}
+.ios .text8 span {
+    font-size: 13px;
+}
+.text9 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #000000;
+    margin-left: -13px;
+}
+.ios .text9 {
+    font-size: 13px;
+}
+.rowRelation {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+.img1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+.text10 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #4f4f4f;
+    margin-left: -5px;
+    margin-top: -2px;
+    margin-top: 8px;
+}
+.ios .text10 {
+    font-size: 13px;
+}
+.text11 {
+    margin-left: -20px;
+    margin-top: 5px;
+    margin-right: 18px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #2789ae;
+}
+.ios .text11 {
+    font-size: 22px;
+}
+.text12 {
+    margin-top: 5px;
+    margin-left: -10px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #39639d;
+}
+.ios .text12 {
+    font-size: 22px;
+}
+.img2 {
+    margin-top: -15px;
+    width: 83px;
+    height: 83px;
+    margin-left: -10px;
+}
+.row{
+    margin-top: 10%;
+    justify-content: center;
+}
+.text13 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78125em;
+    line-height: 13px;
+    color: #39649e;
+    float: left;
+    margin-top: -2px;
+
+}
+.ios .text13 {
+    font-size: 12.5px;
+}
+.text13 span {
+    color: #4f4f4f;
+    display: contents;
+}
+.cercle {
+    margin-right: 3px;
+    width: 14.85px;
+    height: 8px;
+    float: left;
+}
+.center {
+    text-align: center;
+}
+.button {
+    width: 289px;
+    height: 36px;
+    background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+    border-radius: 30px;
+    outline: none;
+}
+.textButton {
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size:  0.875em;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.ios .textButton {
+    font-size: 14px;
+}
+@media (min-device-height: 700px) {
+    .row1{
+        margin-top: -10%;
+    }
+    .row{
+        margin-top: 12%;
+    }
+}
+@media (min-device-height: 812px) {
+    .row1{
+        margin-top: 1%;
+    }
+    .row{
+        margin-top: 18%;
+    }
+    // .ios .title {
+    //     margin-top: 51px;
+    // }
+}
+@media (max-device-height: 667px) {
+    .row1{
+        margin-top: -10%;
+    }
+    .row{
+        margin-top: 7%;
+    }
+    .profil {
+        width: 86.2px;
+        height: 85.71px;
+        margin: 20px;
+        border-radius: 43.1px;
+    }
+}
+@media (max-device-height: 568px) {
+    .row1{
+        margin-top: -13%;
+    }
+    .row{
+        margin-top: 0%;
+    }
+    .profil {
+        width: 66.2px;
+        height: 65.71px;
+        margin: 25px;
+        border-radius: 33.1px;
+    }
+    .name {
+        margin-top: 30px;
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 500;
+        font-size:  0.875em;
+        line-height: 20px;
+        color: #000000;
+    }
+    .row2{
+        margin-top: -30px;
+    }
+    .row3{
+        margin-top: -10px;
+    }
+    .row4{
+        margin-top: -10px;
+    }
+    .text8 {
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.8125em;
+        line-height: 133%;
+        letter-spacing: 0.24px;
+        color: #828282;
+        margin-left: 0px;
+        margin-right: 3px;
+    }
+    .rowTextRelation {
+        margin-top: -30px;
+        margin-left: 10%;
+    }
+    .img2 {
+        margin-top: -15px;
+        width: 63px;
+        height: 63px;
+        margin-left: -5px;
+    }
+
+    .button {
+        width: 289px;
+        height: 32px;
+        background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+        border-radius: 30px;
+    }
+    .text6 {
+        width: 280px;
+    }
+}
+@media  (min-device-width: 455px) {
+    .text13 {
+        
+        font-size: 13px;
+    }
+}
+@media  (max-device-width: 450px) {
+    .text13 {
+        
+        font-size: 11.5px;
+    }
+}
+@media  (max-device-width: 320px) {
+    .text13 {
+        
+        font-size: 11px;
+    }
+}

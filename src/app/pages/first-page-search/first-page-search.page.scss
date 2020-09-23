@@ -1,0 +1,242 @@
+.iconGoBack {
+    outline: none;
+    background: rgba(0, 0, 0, 0.0001);
+    box-sizing: border-box;
+    height: 16px;
+    width: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: -40px;
+}
+.bg {
+    background: linear-gradient(155.21deg, #39639D 0%, #2789AE 100%);
+    height: 57%;
+}
+.ios .iconGoBack {
+    height: 16px;
+    width: 8px;
+    margin-top: 21px;
+}
+.title {
+    margin: auto;
+    margin-top: 20px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+.rowHeader {
+    margin-top: 16px;
+}
+// ion-content {
+//     --ion-background-color: linear-gradient(155.21deg, #39639D 0%, #2789AE 100%);
+// }
+.text1 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    margin-top: 8%;
+}
+.iconMetier {
+    width: 15px;
+    height: 15px;
+    margin-left: 27px;
+    margin-top: 23px;
+    margin-right: 10px;
+}
+.iconSecteur {
+    width: 37px;
+    height: 37px;
+    margin-left: 14px;
+    margin-top: 9px;
+}
+.iconZoneGeo {
+    margin-left: 27px;
+    width: 13px;
+    height: 17px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.textMetier {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 13px;
+    /* identical to box height, or 104% */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.textMetier span {
+    margin-left: 2px;
+}
+.supWhite {
+    width: 6px;
+    height: 13px;
+    margin-right: 26px;
+    margin-top: 32px;
+}
+.horizontalLine {
+    width: 269px;
+    height: 0px;
+    opacity: 0.4;
+    border: 1px solid #EAEAEA;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.button {
+    width: 157px;
+    height: 24px;
+    float: right;
+    background: transparent;
+    border-radius: 100px;
+    margin-top: 37px;
+    margin-right: 26px;
+    outline: none;
+    opacity: 0.7;
+    border: 1px solid #EAEAEA;
+}
+.textButton {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    float: left;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-left: 15px;
+}
+.plus {
+    height: 10px;
+    width: 10px;
+    float: right;
+    margin-right: 3px;
+    margin-top: 1px;
+}
+.divButton {
+    width: 100%;
+    height: 131px;
+
+    background: #F9F9F9;
+    box-shadow: 0px -1px 5px rgba(255, 255, 255, 0.12);
+    border-radius: 13px 13px 0px 0px;
+    position: fixed;
+    bottom: 0px;
+}
+.tiret {
+    width: 26px;
+    height: 6px;
+    margin: auto;
+}
+.divImg1 {
+    text-align: center;
+    margin-top: 10px;
+}
+.buttonContinue {
+    width: 289px;
+    height: 36px;
+    border-radius: 100px;
+    margin-top: 100px;
+    outline: none;
+    background: #F9F9F9;
+    border: 1px solid #828282;
+}
+.buttonContinue[disabled] {
+    background: #C4C4C4;
+  }
+.textButtonContinue {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #828282;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.divButtonContinue {
+    text-align: center;
+}
+.textInputMetier {
+    // width: 100%;
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 13px;
+
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    width: 237px;
+}
+.text2 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 147.3%;
+    /* or 18px */
+    text-align: center;
+    letter-spacing: 0.24px;
+
+    color: #828282;
+}
+.text3 {
+    font-family: 'UntitledSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    line-height: 147.3%;
+    /* or 18px */
+    text-align: center;
+    letter-spacing: 0.24px;
+
+    color: #828282;
+    margin-top: -10px;
+}
+.heightDiv {
+    height: 20%;
+} 
+.bg2 {
+    height: 47%;
+    background: #F9F9F9;
+    margin-top: -10px;
+}
+@media (min-device-height: 812px) {
+    .ios .rowHeader {
+        margin-top: 35px;
+    }
+}
+@media (max-device-height: 568px) {
+    .ios .iconGoBack {
+        height: 16px;
+        width: 8px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+   
+}

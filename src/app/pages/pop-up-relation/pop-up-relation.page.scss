@@ -1,0 +1,361 @@
+ion-content {
+    --ion-background-color: #FFFFFF;
+  }
+.header-md::after,
+.footer-md::before {
+    background: none;
+}
+.icon {
+    outline: none;
+    width: 14.86px;
+    height: 14.28px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+.title {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+    margin-top: 25px;
+}
+.ios .title {
+    font-size: 16px;
+}
+.profil {
+    width: 90px;
+    height: 90px;
+    margin: 27px;
+    border-radius: 45px;
+}
+.name {
+    margin-top: 40px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #000000;
+}
+.ios .name {
+    font-size: 16px;
+}
+.text {
+    margin-top: -15px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 16px;
+    color: #4f4f4f;
+}
+.ios .text {
+    font-size: 13px;
+}
+.text2 {
+    margin-top: -12px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 16px;
+    color: #4f4f4f;
+}
+.ios .text2 {
+    font-size: 13px;
+}
+.text3 {
+    margin-left: 27px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #39639d;
+}
+.ios .text3 {
+    font-size: 16px;
+}
+.textSearch{
+    margin-left: 27px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #39639d;
+}
+.ios .textSearch {
+    font-size: 16px;
+}
+.rowTextRelation {
+    margin-top: -20px;
+}
+.text4 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #828282;
+    margin-left: 27px;
+}
+.ios .text4 {
+    font-size: 13px;
+}
+.text4 span {
+    color: #000000;
+    font-weight: 450;
+    display: contents;
+}
+.rowRelation {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+.img1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+.text6 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #4f4f4f;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+.ios .text6 {
+    font-size: 13px;
+}
+.text7 {
+    margin-left: -30px;
+    margin-top: 5px;
+    margin-right: 18px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #2789ae;
+}
+.ios .text7 {
+    font-size: 22px;
+}
+.text8 {
+    margin-top: 5px;
+    // margin-right: 18px;
+    // margin-left: 18px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375em;
+    line-height: 133%;
+    letter-spacing: 0.24px;
+    color: #39639d;
+}
+.ios .text8 {
+    font-size: 22px;
+}
+.img2 {
+    margin-top: -15px;
+    width: 83px;
+    height: 83px;
+    margin-left: -5px;
+}
+.text9 {
+    margin-left: 10px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78125em;
+    line-height: 16px;
+    color: #39639d;
+}
+.ios .text9 {
+    font-size: 12.5px;
+}
+.text10 {
+    width: 317px;
+    height: 45px;
+    margin-top: -7px;
+    margin-left: 10px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 17px;
+    color: #4f4f4f;
+}
+.ios .text10 {
+    font-size: 14px;
+}
+.buttonClass {
+    padding-left: 15px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        margin-top: 3px;
+        // margin-left: -15px;
+        float: right;
+        width: 104px;
+        height: 22px;
+        background: linear-gradient(161.25deg, #39639d 0%, #2789ae 103.13%);
+        border-radius: 100px;
+        outline: none;
+        ion-img {
+            float: left;
+        }
+}
+.iconVoir {
+    width: 12px;
+    height: 16px;
+    margin-left: 5px;
+    // margin: auto;
+    // margin-top: 4px;
+    float: left;
+    margin-top: 3px ;
+}
+.textButtonVoir {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8125em;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin: 2px;
+    float: left;
+    margin-left: 15px;
+    text-transform: uppercase
+}
+.ios .textButtonVoir {
+    font-size: 13px;
+}
+.row2 {
+    margin-left: 10px;
+    margin-top: 7%;
+}
+.row1{
+    margin-top: -8%;
+}
+.row3{
+    margin-top: -8%;
+}
+.cercle {
+    float: left;
+    margin-left: 10px;
+    width: 14px;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+.text11 {
+    margin: 0;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78125em;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #39649e;
+    float: left;
+    width: 185px;
+}
+.ios .text11 {
+    font-size: 12.5px;
+}
+.text11 span {
+    color: #4F4F4F;
+    display: contents;
+}
+.card {
+    margin-bottom: 14px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+@media (min-device-height: 812px) {
+    .row1{
+        margin-top: 3%;
+    }
+    .card {
+        height: 150px;
+        margin-bottom: 14px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+    }
+    .row2 {
+        margin-left: 10px;
+        margin-top: 10%;
+    }
+}
+@media (max-device-height: 568px) {
+    .row1{
+        margin-top: -13%;
+    }
+    .profil {
+        width: 70px;
+        height: 70px;
+        margin: 25px;
+        border-radius: 35px;
+    }
+    .textSearch{
+        margin-left: 27px;
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 20px;
+        color: #39639d;
+        margin-bottom: -7%;
+    }
+    .buttonClass {
+        padding-left: 15px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        margin-top: 3px;
+        // margin-left: -15px;
+        float: right;
+        width: 104px;
+        height: 22px;
+        background: linear-gradient(161.25deg, #39639d 0%, #2789ae 103.13%);
+        border-radius: 100px;
+        outline: none;
+        ion-img {
+            float: left;
+        }
+    }
+    .text11 {
+        font-family: "UntitledSans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.65625em;
+        display: flex;
+        align-items: center;
+        color: #39649e;
+    }
+    .text10 {
+        width: 269px;
+    }
+}
+@media  (max-device-width: 375px) {
+    .text11 {
+        
+        width: 170px;
+    }
+}
+@media  (max-device-width: 320px) {
+    .text11 {
+        
+        width: 130px;
+    }
+}

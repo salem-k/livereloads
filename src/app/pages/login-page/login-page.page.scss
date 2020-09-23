@@ -1,0 +1,346 @@
+ion-content {
+  --ion-background-color: #f9f9f9;
+}
+.focusedInput {
+  border: 1px solid;
+  border-color: #39639d;
+}
+.background {
+  background-color: #f9f9f9;
+}
+.logo {
+  width: 89px;
+  height: 74px;
+  margin: auto;
+  margin-top: 16%;
+}
+.rowCheckBox{
+  margin-left: 15%;
+}
+.iconGoBack {
+  height: 18px;
+  width: 8px;
+  margin-left: 5%;
+  float: left;
+  margin-right: -50px;
+}
+.divShadow {
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  // height: 70px;
+}
+.heightHeader {
+  height: 25px;
+}
+
+.divHeader {
+  margin-top: -25px;
+}
+.md .textVerif {
+      margin: auto;
+      font-family: "UntitledSans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1em;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #333333;
+      margin-top: 51px;
+}
+.ios .textVerif {
+  margin: auto;
+      font-family: "UntitledSans";
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #333333;
+      font-size: 16px;
+      margin-top: 91px;
+}
+ion-checkbox {
+  margin-top: 21px;
+  margin-right: 15px;
+  --height: 18px;
+  --width: 18px;
+  --background: #f2f2f2;
+  --border-width: 1px !important;
+  --border-style: solid !important;
+  --border-radius: 0px;
+  --checkmark-color: #254168;
+  --background-checked: white;
+  --border-color: #f2f2f2;
+  --border-color-checked: #254168;
+}
+.connectText {
+  height: 18px;
+  margin: auto;
+  margin-top: 20%;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.ios .connectText {
+  font-size: 16px;
+}
+.textCheckBox {
+  width: 243px;
+  height: 41px;
+  margin-left: 12px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #bdbdbd;
+}
+.textInput {
+  margin: auto;
+  margin-top: 30px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #bdbdbd;
+}
+.ios .textInput {
+  font-size: 14px;
+}
+.input {
+    width: 290px;
+    height: 34px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: auto;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #010101;
+  }
+  .ios .input {
+    font-size: 16px;
+  }
+
+.textInput2 {
+  margin: auto;
+  margin-top: 24px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #bdbdbd;
+}
+.ios .textInput2 {
+  font-size: 14px;
+}
+.textInput3 {
+  height: 40px;
+  margin: auto;
+  margin-top: 7px;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #bdbdbd;
+}
+.ios .textInput3 {
+  font-size: 13px;
+}
+.center {
+  text-align: center;
+}
+.buttonConnect {
+  width: 289px;
+  height: 36px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  // position: absolute;
+  // left: 50%;
+  // margin-left: -145px;
+  // bottom: 30px;
+  padding: 0px;
+  margin-bottom: 3%;
+}
+.buttonConnect2 {
+  width: 289px;
+  height: 36px;
+  background: linear-gradient(284.12deg, #2789ae 2.27%, #39639d 92.63%);
+  border-radius: 30px;
+  margin-bottom: 3%;
+  outline: none;
+}
+.textButton {
+  height: 17px;
+  margin: auto;
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ios .textButton {
+  font-size: 14px;
+}
+.textInput4 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+  margin-bottom: 8%;
+  margin-top: -1%;
+}
+.ios .textInput4 {
+  font-size: 13px;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+@media (min-device-height: 700px) {
+  .buttonConnect {
+    // bottom: 67px;
+    margin-bottom: 3%;
+  }
+  .textInput4 {
+    margin-top: -1%;
+    margin-bottom: 7%;
+  }
+}
+@media (min-device-height: 812px) {
+  .buttonConnect {
+    // bottom: 67px;
+    margin-bottom: 3%;
+  }
+  .connectText {
+    margin-top: 15%;
+  }
+  .logo {
+    margin-top: 31%;
+  }
+  .ios .textInput4{
+    margin-bottom: 67px;
+  }
+  .ios .buttonConnect{
+    bottom: 110px;
+  }
+}
+.textInput4 {
+  font-family: "UntitledSans";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+  margin-top: -1%;
+  margin-bottom: 5%;
+}
+.header-md::after,
+.footer-md::before {
+  background: none;
+}
+@media (max-device-height: 700px) {
+  .ios .textVerif {
+    margin-top: 56px;
+  }
+}
+@media (max-device-height: 667px) {
+  .textInput4 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #4f4f4f;
+    margin-top: -1%;
+    margin-bottom: 1%;
+  }
+  .buttonConnect {
+    // bottom: 40px;
+    margin-bottom: 3%;
+  }
+}
+@media (max-device-height: 640px) {
+  .textInput4 {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #4f4f4f;
+    margin-top: -1%;
+    margin-bottom: 1%;
+  }
+}
+@media only screen and (max-device-height: 568px) {
+  .divShadow {
+    height: 50px;
+  }
+  .textInput4 {
+    margin-bottom: 0%;
+    margin-top: -1%;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #4f4f4f;
+  }
+  .logo {
+    width: 89px;
+    height: 74px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .rowCheckBox{
+    margin-left: 15%;
+    margin-top: -5%;
+  }
+  .textCheckBox {
+    width: 243px;
+    height: 41px;
+    margin-left: 12px;
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8125em;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #bdbdbd;
+    margin-top: -30px;
+    margin-left: 33px;
+  }
+}

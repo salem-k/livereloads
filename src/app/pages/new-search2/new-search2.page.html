@@ -1,0 +1,133 @@
+<ion-content class="background" scroll-y="false" >
+<img *ngIf='!toggled' src='assets/img/goBack.png' class="iconGoBack" (click)='goBack()'/>
+<img *ngIf='toggled' src='assets/img/goBack.png' class="iconGoBack" (click)='closeModal()'/>
+<p *ngIf='toggled' class="titleNewSearch" >Nouvelle recherche</p>
+<p class="textNewSearch">Nouvelle recherche </p>
+<p class="textNewSearch2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+<!--
+  #myInput formControlName="input" 
+-->
+<!-- <ion-input class="input" inputmode="text" enterkeyhint="send" #searchInput placeholder='Lorem ipsum dolo sit amet' (focusin)='onFocus()'
+(focusout)="onBlur()" 
+ [class.focusedInput]='inputFocus1' [(ngModel)]='valueInput' (keypress)="search($event)">
+ 
+  <img src="assets/img/searchInput.png" class="searchInput"/>
+
+</ion-input> -->
+<form action="."> 
+  <ion-searchbar (click)='onFocus()' #searchInput class="input"  (keypress)="search($event)" [class.focusedInput]='inputFocus1' name='valueInput' [(ngModel)]='valueInput'  placeholder='Chercher' showCancelButton="never">
+  </ion-searchbar>
+</form>
+<p *ngIf='!criteresClicked && !spinner && !footer && focusedIonSearchBar' class="criteres"  (click)='clickCriteres()'>PLUS DE CRITERES</p>
+<p *ngIf='!criteresClicked && !spinner && footer && focusedIonSearchBar' class="criteres"  (click)='clickCriteres()'>PLUS DE CRITERES</p>
+<p *ngIf='!criteresClicked && !spinner && footer && !focusedIonSearchBar' class="criteres2"  (click)='clickCriteres()'>PLUS DE CRITERES</p>
+
+<!-- <button (click)="search()">Search</button> -->
+<div class="center">
+  <ion-spinner *ngIf='spinner' class="spinner" name="crescent"></ion-spinner>
+  <img *ngIf='results && !focused && !spinner' src='assets/img/exclude.png' class="exclude" [class.clickedCriteres]='criteresClicked' />
+  <p *ngIf='results && !focused && !spinner' class="excludeText">Environ <span>{{resultCount}}</span> résultats</p>
+</div>
+<!--
+   *ngIf='!criteresClicked'
+-->
+
+
+<div *ngIf='criteresClicked && !spinner' [class.divSecteur2]='footer'   class="divSecteur">
+  <ion-row (click)="goPageNewSearchSecteur()">
+    <ion-col>
+      <ion-row>
+        <!-- <img src="/assets/img/iconSecteur.png" class="iconMetier" /> -->
+        <ion-col>
+          <!-- [class.textMetier2]='valueParamSecteur !== null'-->
+          <p class="textMetier">
+            Secteur
+          </p>
+          <p class="textInputMetier">{{ currentSearch.sectors }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <img src="/assets/img/supWhite.png" class="supWhite" />
+  </ion-row>
+  <div class="horizontalLine"></div>
+  <ion-row (click)="goPageNewSearchZoneGeo()">
+    <ion-col>
+      <ion-row>
+        <!-- <img src="/assets/img/iconZoneGeo.png" class="iconMetier" /> -->
+        <ion-col>
+          <p class="textMetier" >
+            <!--[class.textMetier2]='valueParamZoneGeo!== null'-->
+            Zone géographique
+            <!-- <span *ngIf="valueParamZoneGeo !== null">(1)</span> -->
+          </p>
+          <p class="textInputMetier">{{ currentSearch.geos }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <img src="/assets/img/supWhite.png" class="supWhite" />
+  </ion-row>
+  <div class="horizontalLine"></div>
+  <!-- <div class="center"> -->
+    <img src="assets/img/close.png" class="close" (click)='closeCriteres()'/>
+  <!-- </div> -->
+ 
+</div>
+<!-- <div *ngIf='footer && !spinner' class="divButtonContinue">
+  <p *ngIf='state' class="retour" (click)='toggleFooter()'>RETOUR</p>
+  <button  [class.buttonContinue]='!state' [class.button2]='state' >
+    <p *ngIf='!state' class="textButtonContinue" (click)='toggle()'>Continuer</p> 
+    <p *ngIf='state' class="textButton2" (click)="saveSearch()">LANCER</p></button>
+   
+</div> -->
+<div #logo [hidden]='!footer || spinner' class="buttonContinueDiv" [class.divCriteresDetails]='toggled' [class.mover2]='anim'>
+  <div class="divImg1" *ngIf='toggled' >
+    <img src="/assets/img/icon2Tiret.png" class="tiret" (click)='closeModal()'/>
+  </div>
+  <div class="content" *ngIf='toggled'>
+    <p  class="titleContent">Titre </p>
+      <p   class="textCard1">{{valueInput}}</p>
+    
+    <p class="titleContent">Motif</p>
+    <ion-card *ngIf='!clickedCard' (click)='editCard()' class="card2">
+        <p class="textCard2">{{motif}}</p>
+    </ion-card>
+    <textarea *ngIf='clickedCard' class="card3" [(ngModel)]="motif">
+      
+    </textarea> 
+    <p class="text">Ce message doit toujours être écrit à <span>la 3ème personne</span>, c'est ce <br> texte que vos amis receveront <span>par message LinkedIn</span>  pour <br> indiquer la raison de la mise en contact.</p>
+  </div>
+  <p *ngIf='toggled' class="retour" (click)='closeModal()'>RETOUR</p>
+  <button *ngIf='!toggled' class='buttonContinue' (click)='toggleModal()'>
+    <p class="textButtonContinue"  >Continuer</p>
+  </button>
+  <button *ngIf='toggled' class='button2'>
+    <p *ngIf='toggled' class="textButton2" (click)="saveSearch()">LANCER</p>
+  </button>
+</div>
+<!-- <lib-ionic-pullup class="footerPullUp" *ngIf='footer && !spinner' (dragged)="onDrag($event)"  (expanded)="footerExpanded()" (collapsed)="footerCollapsed()" [(state)]="footerState" [toolbarTopMargin]="100" [minBottomVisible]="70">
+
+  <ion-toolbar  color="light" class="toolbar" (click)="toggleFooter()" #ionDragFooter>
+    <div class="divImg1">
+    <img src="/assets/img/icon2Tiret.png" class="tiret" />
+  </div>
+  </ion-toolbar>
+  <ion-content class="background2" *ngIf='!state'>    
+  </ion-content>
+  <ion-content class="background2" *ngIf='state'>        
+    <div class="content">
+      <p class="titleContent">Titre </p>
+        <p class="textCard1">{{valueInput}}</p>
+      
+      <p class="titleContent">Motif</p>
+      <ion-card *ngIf='!clickedCard' (click)='editCard()' class="card2">
+          <p class="textCard2">{{motif}}</p>
+      </ion-card>
+      <textarea *ngIf='clickedCard' class="card3" [(ngModel)]="motif">
+        
+      </textarea>
+      <p class="text">Ce message doit toujours être écrit à <span>la 3ème personne</span>, c'est ce <br> texte que vos amis receveront <span>par message LinkedIn</span>  pour <br> indiquer la raison de la mise en contact.</p>
+    </div>
+  </ion-content>
+  </lib-ionic-pullup> -->
+</ion-content>
+

@@ -1,0 +1,104 @@
+.user {
+    width: 152px;
+    height: 152px;
+    border-radius: 76px;
+    padding: 20px;
+    border: 0.7px solid #39639d !important;
+    position: fixed;
+    top: 150px;
+    left: 30%;
+}
+ion-spinner {
+    color: #39639d;
+    width: 202px  !important;
+    height: 180px !important;
+    position: fixed;
+    top: 139px;
+    left: 24%;
+}
+.textSec {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8125em;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    position: fixed;
+    top: 50%;
+    left: 37%;
+}
+.ios .textSec {
+    font-size: 13px;
+}
+.textSec span {
+   font-weight: lighter; 
+}
+.textSynch {
+    font-family: "UntitledSans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5625em;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+.ios .textSynch {
+    font-size: 25px;
+}
+
+@media (min-device-height: 700px) {
+    .textSec {
+        position: fixed;
+        top: 45%;
+        left: 37%;
+    }
+    .textSynch {
+        top: 50%;
+    }
+}
+
+@media (min-device-height: 812px) {
+    .user {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        padding: 15px;
+        border: 0.5px solid #39639d !important;
+        position: fixed;
+        top: 180px;
+        left: 30%;
+    }
+    ion-spinner {
+        color: #39639d;
+        width: 180px !important;
+        height: 180px !important;
+        position: fixed;
+        top: 169px;
+        left: 26%;
+    }
+    .textSec {
+        position: fixed;
+        top: 45%;
+        left: 37%;
+    }
+    .textSynch {
+        top: 50%;
+    }
+}
+
+@media (max-device-height: 568px) {
+    .textSec {
+        position: fixed;
+        top: 60%;
+        left: 37%;
+    }
+    .textSynch {
+        top: 65%;
+    }
+}
